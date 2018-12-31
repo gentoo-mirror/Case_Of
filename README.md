@@ -9,7 +9,13 @@ All packages in my overlay are usable but not enough tested to be considered sta
 ### Using `app-eselect/eselect-repository`
 
 ```
-eselect repository add Case_Of git https://framagit.org/Case_Of/gentoo-overlay.git
+eselect repository enable Case_Of
+```
+
+### Using `app-portage/layman`
+
+```
+layman -fa Case_Of
 ```
 
 ### Installing in `/etc/portage/repos.conf/Case_Of.conf`
