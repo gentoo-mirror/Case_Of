@@ -1,4 +1,4 @@
-# Copyright 1999-2018 Gentoo Authors
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -66,7 +66,10 @@ DEPEND="${CDEPEND}
 RDEPEND="${CDEPEND}
 	app-arch/xz-utils
 	>=media-fonts/dejavu-2.28
-	media-fonts/wqy-zenhei"
+	|| (
+		media-fonts/wqy-zenhei
+		media-fonts/wqy-microhei
+	)"
 
 S="${WORKDIR}"/${MY_P}
 
