@@ -7,5 +7,5 @@ KEYWORDS=~amd64 ~x86
 LICENSE=GPL-3
 RDEPEND=|| ( app-office/libreoffice app-office/libreoffice-bin app-office/libreoffice-bin-debug )
 SLOT=0
-SRC_URI=http://www.dicollecte.org/grammalecte/oxt/Grammalecte-fr-v0.6.5.oxt
-_md5_=376631172829c6636a915f74bacf3d5e
+SRC_URI=http://www.dicollecte.org/grammalecte/oxt/Grammalecte-fr-v1.0.oxt
+_md5_=803967df8645d9fe8e1616b4cb3d203a
