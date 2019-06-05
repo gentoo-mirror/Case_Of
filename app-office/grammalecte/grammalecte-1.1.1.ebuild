@@ -29,6 +29,6 @@ src_unpack() {
 
 src_install() {
 	find "${S}/${PN}" \( -type d -exec chmod 755 {} \; \) -o \( -type f -exec chmod 644 {} \; \) || die "Setting permissions failed."
-	insinto /usr/lib/libreoffice/share/extensions
+	insinto "/usr/$(usex amd64 lib64 lib)/libreoffice/share/extensions"
 	doins -r "${S}/${PN}"
 }
