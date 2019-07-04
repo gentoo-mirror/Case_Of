@@ -3,6 +3,8 @@
 
 EAPI=7
 
+inherit multilib
+
 DESCRIPTION="French grammar checker extension for LibreOffice."
 HOMEPAGE="https://www.dicollecte.org/"
 SRC_URI="http://www.dicollecte.org/${PN}/oxt/${PN^}-fr-v${PV}.oxt"
@@ -29,6 +31,6 @@ src_unpack() {
 
 src_install() {
 	find "${S}/${PN}" \( -type d -exec chmod 755 {} \; \) -o \( -type f -exec chmod 644 {} \; \) || die "Setting permissions failed."
-	insinto "/usr/$(usex amd64 lib64 lib)/libreoffice/share/extensions"
+	insinto "/usr/$(get_libdir)/libreoffice/share/extensions"
 	doins -r "${S}/${PN}"
 }
