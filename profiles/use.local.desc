@@ -2,3 +2,5 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
+games-strategy/hedgewars:pas2c - Use experimental Pascal to C convertor
+games-strategy/hedgewars:server - Enable local server
