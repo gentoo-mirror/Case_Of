@@ -86,6 +86,7 @@ src_configure() {
 		-DDATA_INSTALL_DIR="${EPREFIX}/usr/share/${PN}"
 		-Dtarget_binary_install_dir="${EPREFIX}/usr/bin"
 		-Dtarget_library_install_dir="${EPREFIX}/usr/$(get_libdir)"
+		-DCMAKE_BUILD_TYPE=Release
 		-DNOSERVER=$(usex server FALSE TRUE)
 		-DBUILD_ENGINE_C=$(usex pas2c ON OFF)
 		-DNOVIDEOREC=$(usex pas2c TRUE FALSE)
