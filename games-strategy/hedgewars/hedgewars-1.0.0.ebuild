@@ -4,10 +4,10 @@
 EAPI=6
 
 CMAKE_MAKEFILE_GENERATOR=emake
+CMAKE_BUILD_TYPE=Release
 inherit cmake-utils desktop xdg-utils
 
 MY_P=${PN}-src-${PV}
-DEB_PATCH_VER=2
 
 DESCRIPTION="A turn-based strategy, artillery, action and comedy game"
 HOMEPAGE="https://www.hedgewars.org/"
