@@ -11,8 +11,7 @@ DEB_PATCH_VER=2
 
 DESCRIPTION="A turn-based strategy, artillery, action and comedy game"
 HOMEPAGE="https://www.hedgewars.org/"
-SRC_URI="https://www.hedgewars.org/download/releases/${MY_P}.tar.bz2
-	mirror://debian/pool/main/h/${PN}/${PN}_0.9.23-dfsg-${DEB_PATCH_VER}.debian.tar.xz"
+SRC_URI="https://www.hedgewars.org/download/releases/${MY_P}.tar.bz2"
 LICENSE="GPL-2 Apache-2.0 FDL-1.3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
@@ -75,10 +74,6 @@ RDEPEND="${CDEPEND}
 	)"
 
 S="${WORKDIR}"/${MY_P}
-
-PATCHES=(
-	"${FILESDIR}"/${PN}-0.9.22-rpath-fix.patch
-)
 
 src_configure() {
 	local mycmakeargs=(
