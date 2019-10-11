@@ -4,16 +4,16 @@
 EAPI=6
 
 CMAKE_MAKEFILE_GENERATOR=emake
+CMAKE_BUILD_TYPE=RelWithDebInfo
 inherit cmake-utils desktop xdg-utils mercurial
 
 DESCRIPTION="A turn-based strategy, artillery, action and comedy game"
 HOMEPAGE="https://www.hedgewars.org/"
 EHG_REPO_URI="http://hg.hedgewars.org/hedgewars/"
-
 LICENSE="GPL-2 Apache-2.0 FDL-1.3"
 SLOT="0"
 KEYWORDS=""
-IUSE="libav server pas2c debug"
+IUSE="libav server pas2c"
 
 REQUIRED_USE="
 	x86? ( pas2c )
@@ -73,22 +73,18 @@ RDEPEND="${CDEPEND}
 
 S="${WORKDIR}"/${MY_P}
 
-PATCHES=(
-	"${FILESDIR}"/${PN}-0.9.22-rpath-fix.patch
-)
-
 src_configure() {
 	local mycmakeargs=(
 		-DMINIMAL_FLAGS=ON
 		-DDATA_INSTALL_DIR="${EPREFIX}/usr/share/${PN}"
 		-Dtarget_binary_install_dir="${EPREFIX}/usr/bin"
 		-Dtarget_library_install_dir="${EPREFIX}/usr/$(get_libdir)"
+		-DCMAKE_BUILD_TYPE=RelWithDebInfo
 		-DNOSERVER=$(usex server FALSE TRUE)
 		-DBUILD_ENGINE_C=$(usex pas2c ON OFF)
 		-DNOVIDEOREC=$(usex pas2c TRUE FALSE)
 		-DCMAKE_VERBOSE_MAKEFILE=TRUE
 		-DPHYSFS_SYSTEM=ON
-		$(usex debug '-DCMAKE_BUILD_TYPE=DEBUG' '' '' '')
 		# Need to tell the build system where the fonts are located
 		# as it uses PhysFS' symbolic link protection mode which
 		# prevents us from symlinking the fonts into the right directory
