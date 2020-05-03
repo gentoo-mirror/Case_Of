@@ -1,4 +1,4 @@
-# Copyright 1999-2019 Gentoo Authors
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -13,7 +13,7 @@ EHG_REPO_URI="http://hg.hedgewars.org/hedgewars/"
 LICENSE="GPL-2 Apache-2.0 FDL-1.3"
 SLOT="0"
 KEYWORDS=""
-IUSE="libav server pas2c"
+IUSE="server pas2c"
 
 REQUIRED_USE="
 	x86? ( pas2c )
@@ -38,8 +38,7 @@ CDEPEND="
 	media-libs/sdl2-ttf:=
 	sys-libs/zlib:=
 	!pas2c? (
-		libav? ( media-video/libav:= )
-		!libav? ( media-video/ffmpeg:= )
+		media-video/ffmpeg:=
 	)"
 DEPEND="${CDEPEND}
 	!pas2c? ( >=dev-lang/fpc-2.4 )
