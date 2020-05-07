@@ -5,7 +5,7 @@ EAPI=7
 
 PLUGINS_HASH="029bd8ccb58c4452bd82ab42be8739f1639e42d4"
 PYBIND11_VERSION="2.2.4"
-PYTHON_COMPAT=( python{2_7,3_{4,5,6}} )
+PYTHON_COMPAT=( python{2_7,3_{6,7,8}} )
 
 inherit cmake-utils python-single-r1 xdg-utils
 
