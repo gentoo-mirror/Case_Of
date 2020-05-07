@@ -5,7 +5,7 @@ EAPI=6
 
 PLUGINS_HASH="2b232eb7fe87b6cdf861815ea2f4f7ba4e4c46c6"
 PYBIND11_VERSION="2.2.4"
-PYTHON_COMPAT=( python{2_7,3_{4,5,6}} )
+PYTHON_COMPAT=( python{2_7,3_{6,7,8}} )
 
 inherit cmake-utils gnome2-utils python-single-r1
 
