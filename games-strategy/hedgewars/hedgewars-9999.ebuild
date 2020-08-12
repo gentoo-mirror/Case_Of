@@ -56,7 +56,7 @@ DEPEND="${CDEPEND}
 		dev-haskell/vector
 		dev-haskell/utf8-string
 		dev-haskell/yaml
-		>=dev-haskell/zlib-0.5.3 <dev-haskell/zlib-0.6
+		>=dev-haskell/zlib-0.5.3
 	)
 	pas2c? (
 		>=dev-lang/ghc-6.10
