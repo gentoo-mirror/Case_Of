@@ -70,8 +70,6 @@ RDEPEND="${CDEPEND}
 		media-fonts/wqy-microhei
 	)"
 
-S="${WORKDIR}"/${MY_P}
-
 src_configure() {
 	local mycmakeargs=(
 		-DMINIMAL_FLAGS=ON
