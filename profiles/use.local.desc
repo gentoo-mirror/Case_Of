@@ -4,6 +4,7 @@
 
 games-strategy/hedgewars:pas2c - Use experimental Pascal to C convertor
 games-strategy/hedgewars:server - Enable local server
+net-misc/seafile-client:shibboleth - Build support for Shibboleth single sign-on
 x11-misc/clipit:appindicator - Enable support for appindicator
 x11-misc/clipit:gtk3 - Enable GTK+ 3 support
 x11-plugins/syncthingtray:qml - Use QML as Javascript provider
