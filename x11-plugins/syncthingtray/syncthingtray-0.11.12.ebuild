@@ -33,6 +33,7 @@ RDEPEND="
 	libressl? ( dev-libs/libressl:= )
 	qml? ( dev-qt/qtdeclarative:5 )
 	script? ( dev-qt/qtscript:5 )
+	systemd? ( dev-qt/qtdbus:5 )
 	webengine? ( dev-qt/qtwebengine:5 )
 	webkit? ( dev-qt/qtwebkit:5 )
 "
