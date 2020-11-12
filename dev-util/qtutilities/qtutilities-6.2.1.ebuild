@@ -15,8 +15,11 @@ KEYWORDS="~amd64 ~x86"
 IUSE="static-libs"
 
 RDEPEND="
+	dev-qt/linguist-tools:5
 	dev-qt/qtcore:5
+	dev-qt/qtdbus:5
 	dev-qt/qtgui:5
+	dev-qt/qttest:5
 	dev-qt/qtwidgets:5
 	dev-util/cpp-utilities
 "
