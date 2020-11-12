@@ -5,25 +5,18 @@ EAPI=7
 
 inherit cmake
 
-DESCRIPTION="Common Qt related C++ classes and routines used by my applications such as dialogs, widgets and models"
-HOMEPAGE="https://github.com/Martchus/qtutilities"
+DESCRIPTION="Common C++ classes and routines such as argument parser, IO and conversion utilities"
+HOMEPAGE="https://github.com/Martchus/cpp-utilities"
 SRC_URI="https://github.com/Martchus/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-2+"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="static-libs"
+IUSE="static-libs test"
 
-RDEPEND="
-	dev-qt/linguist-tools:5
-	dev-qt/qtcore:5
-	dev-qt/qtdbus:5
-	dev-qt/qtgui:5
-	dev-qt/qttest:5
-	dev-qt/qtwidgets:5
-	dev-util/cpp-utilities
-"
-DEPEND="${RDEPEND}"
+DEPEND="test? ( dev-util/cppunit )"
+
+RESTRICT="!test? ( test )"
 
 src_configure() {
 	local mycmakeargs=(
