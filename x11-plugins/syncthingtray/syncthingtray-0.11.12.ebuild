@@ -22,7 +22,9 @@ REQUIRED_USE="
 "
 
 RDEPEND="
+	dev-qt/qtconcurrent:5
 	dev-qt/qtcore:5
+	dev-qt/qtnetwork:5
 	dev-qt/qtsvg:5
 	dev-util/qtutilities
 	kde? (
@@ -37,14 +39,10 @@ RDEPEND="
 	webengine? ( dev-qt/qtwebengine:5 )
 	webkit? ( dev-qt/qtwebkit:5 )
 "
-DEPEND="
-	dev-util/qtutilities
+DEPEND="${RDEPEND}
 	kde? (
 		kde-frameworks/extra-cmake-modules:5
-		kde-frameworks/kio:5
-		kde-frameworks/plasma:5
 	)
-	virtual/opengl
 "
 
 RESTRICT="test" #tests want to access network
