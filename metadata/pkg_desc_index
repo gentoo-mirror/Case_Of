@@ -4,8 +4,6 @@ dev-python/pypandoc 1.5: Pypandoc provides a thin wrapper for pandoc, a universa
 dev-util/cpp-utilities 5.6.0 5.8.0: Common C++ classes and routines such as argument parser, IO and conversion utilities
 dev-util/qtutilities 6.2.1 6.3.1: Common Qt related C++ classes and routines used by my applications such as dialogs, widgets and models
 games-strategy/hedgewars 1.0.0 9999: A turn-based strategy, artillery, action and comedy game
-net-misc/seafile 7.0.10: File syncing and sharing software with file encryption and group sharing
-net-misc/seafile-client 7.0.10: Seafile desktop client
 sys-apps/gprename 20160905: GPRename is a complete batch renamer for files and directories
 x11-misc/albert 0.14.22 0.15.0 0.16.1: Desktop agnostic launcher (with Python extensions support)
 x11-misc/clipit 1.4.5: Lightweight GTK+ clipboard manager. Fork of Parcellite.
