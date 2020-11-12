@@ -38,6 +38,7 @@ RDEPEND="
 	webkit? ( dev-qt/qtwebkit:5 )
 "
 DEPEND="
+	dev-util/qtutilities
 	kde? (
 		kde-frameworks/extra-cmake-modules:5
 		kde-frameworks/kio:5
