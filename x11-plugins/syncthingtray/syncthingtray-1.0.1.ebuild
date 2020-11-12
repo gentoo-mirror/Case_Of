@@ -47,6 +47,8 @@ DEPEND="${RDEPEND}
 
 RESTRICT="test" #tests want to access network
 
+PATCHES=( "${FILESDIR}/${PN}-fix-build-without-systemd-on-USE-kde.patch" )
+
 src_configure() {
 	local mycmakeargs=(
 		-DCMAKE_BUILD_TYPE:STRING=Release
