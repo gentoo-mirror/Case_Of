@@ -6,8 +6,8 @@ EAPI=7
 inherit multilib
 
 DESCRIPTION="French grammar checker extension for LibreOffice."
-HOMEPAGE="https://www.dicollecte.org/"
-SRC_URI="http://www.dicollecte.org/${PN}/oxt/${PN^}-fr-v${PV}.oxt"
+HOMEPAGE="https://grammalecte.net/"
+SRC_URI="https://grammalecte.net/${PN}/oxt/${PN^}-fr-v${PV}.oxt"
 
 LICENSE="GPL-3"
 SLOT="0"
