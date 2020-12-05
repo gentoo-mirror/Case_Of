@@ -8,4 +8,3 @@ sys-apps/gprename 20160905: GPRename is a complete batch renamer for files and d
 x11-misc/albert 0.14.22 0.15.0 0.16.1: Desktop agnostic launcher (with Python extensions support)
 x11-misc/clipit 1.4.5: Lightweight GTK+ clipboard manager. Fork of Parcellite.
 x11-plugins/syncthingtray 0.11.12 1.0.1: Tray application for Syncthing
-x11-themes/qtstyleplugins 5.0.0 9999: Additional style plugins for Qt5 (gtk2, cleanlook, plastic, motif)
