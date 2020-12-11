@@ -3,7 +3,9 @@
 
 EAPI=7
 
-inherit gnome2-utils meson xdg
+PYTHON_COMPAT=( python3_{7,8,9} )
+
+inherit distutils-r1 gnome2-utils meson xdg
 
 DESCRIPTION="A distraction free Markdown editor for GNU/Linux made with GTK+"
 HOMEPAGE="https://somas.pages.gitlab.gnome.org/apostrophe"
@@ -12,20 +14,25 @@ SRC_URI="https://gitlab.gnome.org/somas/apostrophe/-/archive/v${PV}/${PN}-v${PV}
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
+REGUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 RDEPEND="
+	${PYTHON_DEPS}
 	app-text/gspell
 	dev-libs/gobject-introspection
-	dev-python/regex
-	dev-python/pycairo
-	dev-python/pyenchant
-	dev-python/pygobject
-	dev-python/pypandoc
-	dev-python/python-levenshtein
+	dev-python/regex[${PYTHON_USEDEP}]
+	dev-python/pycairo[${PYTHON_USEDEP}]
+	dev-python/pyenchant[${PYTHON_USEDEP}]
+	dev-python/pygobject[${PYTHON_USEDEP}]
+	dev-python/pypandoc[${PYTHON_USEDEP}]
+	dev-python/python-levenshtein[${PYTHON_USEDEP}]
 	gnome-base/gsettings-desktop-schemas
 	net-libs/webkit-gtk
 "
-DEPEND="gnome-base/gsettings-desktop-schemas"
+DEPEND="
+	${PYTHON_DEPS}
+	gnome-base/gsettings-desktop-schemas
+"
 
 S="${WORKDIR}/${PN}-v${PV}"
 
