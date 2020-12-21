@@ -5,10 +5,17 @@
 		<email>gentoo@retornaz.com</email>
 		<name>Quentin Retornaz</name>
 	</maintainer>
-	<maintainer type="person">
-		<email>kensington@gentoo.org</email>
+	<maintainer type="project">
+		<email>proxy-maint@gentoo.org</email>
+		<name>Proxy Maintainers</name>
 	</maintainer>
 	<upstream>
 		<remote-id type="github">albertlauncher/albert</remote-id>
 	</upstream>
+	<use>
+		<flag name="debug">Enable debugging informations</flag>
+		<flag name="python-extensions">Install default python extensions system-wide</flag>
+		<flag name="statistics">Enable local statistics</flag>
+		<flag name="virtualbox">Enable app-emulation/virtualbox extension</flag>
+	</use>
 </pkgmetadata>
