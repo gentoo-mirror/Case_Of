@@ -5,6 +5,6 @@ dev-util/cpp-utilities 5.6.0 5.8.0: Common C++ classes and routines such as argu
 dev-util/qtutilities 6.2.1 6.3.1: Common Qt related C++ classes and routines used by my applications such as dialogs, widgets and models
 games-strategy/hedgewars 1.0.0 9999: A turn-based strategy, artillery, action and comedy game
 sys-apps/gprename 20160905: GPRename is a complete batch renamer for files and directories
-x11-misc/albert 0.17.1: A fast and flexible keyboard launcher
+x11-misc/albert 0.17.2: A fast and flexible keyboard launcher
 x11-misc/clipit 1.4.5: Lightweight GTK+ clipboard manager. Fork of Parcellite.
 x11-plugins/syncthingtray 0.11.12 1.0.1: Tray application for Syncthing
