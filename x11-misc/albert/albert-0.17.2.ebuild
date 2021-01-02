@@ -1,4 +1,4 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -8,7 +8,7 @@ inherit cmake xdg-utils
 DESCRIPTION="A fast and flexible keyboard launcher"
 HOMEPAGE="https://albertlauncher.github.io/"
 
-PLUGINS_HASH="9c27e1c8f6e8c3bbb4151285e7253b967a8af24b"
+PLUGINS_HASH="b4cac28be7b265027b00279baba14086d97c4d07"
 PYBIND11_VERSION="2.6.1"
 PYTHON_EXTENSIONS_COMMIT="7f571aceaf8e60eee8bb21e1ec4efa0e95523d13"
 JETBRAINS_PYTHON_EXTENSION_COMMIT="b7157473cc923fe4f15023c85a032eeab3627652"
