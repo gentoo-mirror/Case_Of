@@ -8,5 +8,5 @@ LICENSE=GPL-3
 RDEPEND=|| ( app-office/libreoffice app-office/libreoffice-bin app-office/libreoffice-bin-debug )
 SLOT=0
 SRC_URI=https://grammalecte.net/grammalecte/oxt/Grammalecte-fr-v2.0.0.oxt
-_eclasses_=multilib	d410501a125f99ffb560b0c523cd3d1e	toolchain-funcs	605c126bed8d87e4378d5ff1645330cb
+_eclasses_=multilib	d410501a125f99ffb560b0c523cd3d1e	toolchain-funcs	1a94dc06d324bd0dab754e11abe6d27e
 _md5_=34ba81a22b45dae8ce7c6cae84619e12
