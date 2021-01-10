@@ -5,7 +5,7 @@ EAPI=7
 
 PYTHON_COMPAT=( python3_{6,7,8} )
 
-inherit eutils python-single-r1
+inherit eutils python-single-r1 systemd
 
 DESCRIPTION="The Etebase server"
 HOMEPAGE="https://www.etesync.com https://github.com/etesync/server"
@@ -28,6 +28,7 @@ RDEPEND="
 		>=dev-python/msgpack-1.0.0[${PYTHON_USEDEP}]
 		>=dev-python/pynacl-1.3.0[${PYTHON_USEDEP}]
 		>=dev-python/pytz-2019.3[${PYTHON_USEDEP}]
+		www-servers/uvicorn[${PYTHON_USEDEP}]
 	')
 "
 
@@ -46,4 +47,10 @@ src_install() {
 	doins -r .
 	fperms 755 /usr/$(get_libdir)/${PN}/manage.py
 	make_wrapper "${PN}" "./manage.py" "${EPREFIX}/usr/$(get_libdir)/${PN}"
+	sed "s/@LIBDIR@/$(get_libdir)/" "${FILESDIR}/etebase.initd" > etebase.initd || die
+	sed "s/@LIBDIR@/$(get_libdir)/" "${FILESDIR}/etebase.service" > etebase.service || die
+	newinitd etebase.initd etebase
+	newconfd "${FILESDIR}/etebase.confd" etebase
+	systemd_dounit etebase.service
+	keepdir /var/lib/${PN}
 }
