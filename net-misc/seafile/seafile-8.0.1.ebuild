@@ -29,8 +29,8 @@ RDEPEND="${PYTHON_DEPS}
 	')
 	sys-libs/zlib
 	net-misc/curl
-	!libressl? ( dev-libs/openssl )
-	libressl? ( dev-libs/libressl )
+	!libressl? ( dev-libs/openssl:= )
+	libressl? ( dev-libs/libressl:= )
 	dev-db/sqlite:3"
 DEPEND="${RDEPEND}
 	$(vala_depend)"
