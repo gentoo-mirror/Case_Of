@@ -1,0 +1,13 @@
+DEFINED_PHASES=install prepare setup
+DESCRIPTION=The Etebase server
+EAPI=7
+HOMEPAGE=https://www.etesync.com https://github.com/etesync/server
+IUSE=python_single_target_python3_6 python_single_target_python3_7 python_single_target_python3_8
+KEYWORDS=~amd64
+LICENSE=AGPL-3
+RDEPEND=python_single_target_python3_6? ( dev-lang/python:3.6 >=dev-lang/python-exec-2:=[python_targets_python3_6] ) python_single_target_python3_7? ( dev-lang/python:3.7 >=dev-lang/python-exec-2:=[python_targets_python3_7] ) python_single_target_python3_8? ( dev-lang/python:3.8 >=dev-lang/python-exec-2:=[python_targets_python3_8] ) python_single_target_python3_6? ( >=dev-python/django-3.1.1[python_targets_python3_6(-),sqlite] >=dev-python/django-cors-headers-3.2.1[python_targets_python3_6(-)] >=dev-python/djangorestframework-3.11.0[python_targets_python3_6(-)] >=dev-python/drf-nested-routers-0.91[python_targets_python3_6(-)] >=dev-python/msgpack-1.0.0[python_targets_python3_6(-)] >=dev-python/pynacl-1.3.0[python_targets_python3_6(-)] >=dev-python/pytz-2019.3[python_targets_python3_6(-)] ) python_single_target_python3_7? ( >=dev-python/django-3.1.1[python_targets_python3_7(-),sqlite] >=dev-python/django-cors-headers-3.2.1[python_targets_python3_7(-)] >=dev-python/djangorestframework-3.11.0[python_targets_python3_7(-)] >=dev-python/drf-nested-routers-0.91[python_targets_python3_7(-)] >=dev-python/msgpack-1.0.0[python_targets_python3_7(-)] >=dev-python/pynacl-1.3.0[python_targets_python3_7(-)] >=dev-python/pytz-2019.3[python_targets_python3_7(-)] ) python_single_target_python3_8? ( >=dev-python/django-3.1.1[python_targets_python3_8(-),sqlite] >=dev-python/django-cors-headers-3.2.1[python_targets_python3_8(-)] >=dev-python/djangorestframework-3.11.0[python_targets_python3_8(-)] >=dev-python/drf-nested-routers-0.91[python_targets_python3_8(-)] >=dev-python/msgpack-1.0.0[python_targets_python3_8(-)] >=dev-python/pynacl-1.3.0[python_targets_python3_8(-)] >=dev-python/pytz-2019.3[python_targets_python3_8(-)] )
+REQUIRED_USE=^^ ( python_single_target_python3_6 python_single_target_python3_7 python_single_target_python3_8 )
+SLOT=0
+SRC_URI=https://github.com/etesync/server/archive/v0.6.1.tar.gz -> etebase-server-0.6.1.tar.gz
+_eclasses_=edos2unix	33e347e171066657f91f8b0c72ec8773	eutils	2d5b3f4b315094768576b6799e4f926e	l10n	8cdd85e169b835d518bc2fd59f780d8e	multilib	d410501a125f99ffb560b0c523cd3d1e	python-single-r1	d3100de905f978df912135806cf27188	python-utils-r1	e41e32d357e5bdd388b5be2ce24f3883	toolchain-funcs	1a94dc06d324bd0dab754e11abe6d27e	wrapper	4251d4c84c25f59094fd557e0063a974
+_md5_=6960104b95477d33e5d800d7f6d2ee11
