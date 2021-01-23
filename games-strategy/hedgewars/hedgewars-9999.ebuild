@@ -1,11 +1,13 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
 
 CMAKE_MAKEFILE_GENERATOR=emake
 CMAKE_BUILD_TYPE=RelWithDebInfo
-inherit cmake desktop xdg-utils mercurial
+LUA_COMPAT=( lua5-1 )
+
+inherit cmake lua-single mercurial xdg-utils
 
 DESCRIPTION="A turn-based strategy, artillery, action and comedy game"
 HOMEPAGE="https://www.hedgewars.org/"
@@ -16,6 +18,7 @@ KEYWORDS=""
 IUSE="server pas2c"
 
 REQUIRED_USE="
+	${LUA_REQUIRED_USE}
 	x86? ( pas2c )
 "
 
@@ -23,9 +26,8 @@ QA_FLAGS_IGNORED="/usr/bin/hwengine" # pascal sucks
 QA_PRESTRIPPED="/usr/bin/hwengine" # pascal sucks
 
 # qtcore:5= - depends on private header
-CDEPEND="
+DEPEND="${LUA_DEPS}
 	>=dev-games/physfs-3.0.1
-	dev-lang/lua:0=
 	dev-qt/qtcore:5=
 	dev-qt/qtgui:5
 	dev-qt/qtnetwork:5
@@ -40,8 +42,7 @@ CDEPEND="
 	!pas2c? (
 		media-video/ffmpeg:=
 	)"
-DEPEND="${CDEPEND}
-	!pas2c? ( >=dev-lang/fpc-2.4 )
+BDEPEND="
 	dev-qt/linguist-tools:5
 	server? (
 		>=dev-lang/ghc-6.10
@@ -58,17 +59,20 @@ DEPEND="${CDEPEND}
 		dev-haskell/yaml
 		>=dev-haskell/zlib-0.5.3
 	)
+	!pas2c? ( >=dev-lang/fpc-2.4 )
 	pas2c? (
 		>=dev-lang/ghc-6.10
 		dev-haskell/parsec
 	)"
-RDEPEND="${CDEPEND}
+RDEPEND="${DEPEND}
 	app-arch/xz-utils
 	>=media-fonts/dejavu-2.28
 	|| (
 		media-fonts/wqy-zenhei
 		media-fonts/wqy-microhei
 	)"
+
+PATCHES=( "${FILESDIR}/${PN}-cmake_lua_version.patch" )
 
 src_configure() {
 	local mycmakeargs=(
@@ -91,6 +95,7 @@ src_configure() {
 		# upstream sets RPATH that leads to weird breakage
 		# https://bugzilla.redhat.com/show_bug.cgi?id=1200193
 		-DCMAKE_SKIP_RPATH=ON
+		-DLUA_VERSION=$(lua_get_version)
 	)
 	cmake_src_configure
 }
