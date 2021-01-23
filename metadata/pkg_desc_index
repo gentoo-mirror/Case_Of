@@ -6,7 +6,7 @@ dev-python/httptools 0.1.1: Fast HTTP Parser
 dev-python/pypandoc 1.5: Pypandoc provides a thin wrapper for pandoc, a universal document converter
 dev-util/cpp-utilities 5.6.0 5.8.0: Common C++ classes and routines such as argument parser, IO and conversion utilities
 dev-util/qtutilities 6.2.1 6.3.1: Common Qt related C++ classes and routines used by my applications such as dialogs, widgets and models
-games-strategy/hedgewars 1.0.0 9999: A turn-based strategy, artillery, action and comedy game
+games-strategy/hedgewars 9999: A turn-based strategy, artillery, action and comedy game
 net-misc/etebase-server 0.6.1: The Etebase server
 net-misc/seafile 8.0.1: File syncing and sharing software with file encryption and group sharing
 net-misc/seafile-client 8.0.1: Seafile desktop client
