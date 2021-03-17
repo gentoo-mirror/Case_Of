@@ -1,4 +1,4 @@
-app-editors/apostrophe 2.2.0.3: A distraction free Markdown editor for GNU/Linux made with GTK+
+app-editors/apostrophe 2.2.0.3 2.4: A distraction free Markdown editor for GNU/Linux made with GTK+
 app-office/grammalecte 2.1.2: French grammar checker extension for LibreOffice.
 dev-python/django-cors-headers 3.2.1: Django App that adds CORS (Cross-Origin Resource Sharing) headers to responses
 dev-python/drf-nested-routers 0.92.5: Nested Routers for Django Rest Framework
