@@ -1,0 +1,37 @@
+diff --git a/pypandoc/pandoc_download.py b/pypandoc/pandoc_download.py
+index 240c7b7..4fa065a 100644
+--- a/pypandoc/pandoc_download.py
++++ b/pypandoc/pandoc_download.py
+@@ -84,8 +84,8 @@ def _handle_linux(filename, targetfolder):
+         archive_name = next(x for x in files if x.startswith('data.tar'))
+         cmd = ["tar", "xf", archive_name]
+         subprocess.check_call(cmd)
+-        # pandoc and pandoc-citeproc are in ./usr/bin subfolder
+-        for exe in ["pandoc", "pandoc-citeproc"]:
++        # pandoc is in ./usr/bin subfolder
++        for exe in ["pandoc"]:
+             src = os.path.join(tempfolder, "usr", "bin", exe)
+             dst = os.path.join(targetfolder, exe)
+             print("* Copying %s to %s ..." % (exe, targetfolder))
+@@ -115,8 +115,8 @@ def _handle_darwin(filename, targetfolder):
+            "-C", pkgutilfolder]
+     subprocess.check_call(cmd)
+ 
+-    # pandoc and pandoc-citeproc are in the ./usr/local/bin subfolder
+-    for exe in ["pandoc", "pandoc-citeproc"]:
++    # pandoc is in the ./usr/local/bin subfolder
++    for exe in ["pandoc"]:
+         src = os.path.join(pkgutilfolder, "usr", "local", "bin", exe)
+         dst = os.path.join(targetfolder, exe)
+         print("* Copying %s to %s ..." % (exe, targetfolder))
+@@ -137,8 +137,8 @@ def _handle_win32(filename, targetfolder):
+     # if only 3.5 is supported, should be `run(..., check=True)`
+     subprocess.check_call(cmd)
+ 
+-    # pandoc.exe, pandoc-citeproc.exe, and the COPYRIGHT are in the Pandoc subfolder
+-    for exe in ["pandoc.exe", "pandoc-citeproc.exe", "COPYRIGHT.txt"]:
++    # pandoc.exe and the COPYRIGHT are in the Pandoc subfolder
++    for exe in ["pandoc.exe", "COPYRIGHT.txt"]:
+         src = os.path.join(tempfolder, "Pandoc", exe)
+         dst = os.path.join(targetfolder, exe)
+         print("* Copying %s to %s ..." % (exe, targetfolder))

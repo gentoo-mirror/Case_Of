@@ -1,4 +1,4 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -19,8 +19,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
 RDEPEND="
-	app-text/pandoc
-	dev-haskell/pandoc-citeproc
+	>=app-text/pandoc-2.11
 	dev-texlive/texlive-latex
 "
 DEPEND="
@@ -29,6 +28,8 @@ DEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	dev-python/urllib3[${PYTHON_USEDEP}]
 "
+
+PATCHES=( "${FILESDIR}/${P}-fix-citeproc-dep.patch" )
 
 python_test() {
 	# Skip tests. Wants: internet access
