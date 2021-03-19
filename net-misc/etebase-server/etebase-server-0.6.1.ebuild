@@ -28,7 +28,7 @@ RDEPEND="
 		>=dev-python/msgpack-1.0.0[${PYTHON_USEDEP}]
 		>=dev-python/pynacl-1.3.0[${PYTHON_USEDEP}]
 		>=dev-python/pytz-2019.3[${PYTHON_USEDEP}]
-		dev-python/uvicorn[${PYTHON_USEDEP}]
+		www-servers/uvicorn[${PYTHON_USEDEP}]
 	')
 "
 
