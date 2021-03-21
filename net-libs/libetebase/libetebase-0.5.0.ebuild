@@ -192,4 +192,6 @@ src_install() {
 	doheader target/etebase.h
 	insinto /usr/$(get_libdir)
 	doins target/$(usex debug "debug" "release")/${PN}.so
+	# for that dumb evolution plugin
+	dosym ${PN}.so "${EPREFIX}/usr/${get_libdir}/${PN}.so.0"
 }
