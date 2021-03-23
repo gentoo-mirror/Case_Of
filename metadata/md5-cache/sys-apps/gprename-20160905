@@ -3,6 +3,7 @@ DEPEND=dev-lang/perl dev-perl/glib-perl dev-perl/Gtk2 dev-perl/libintl-perl dev-
 DESCRIPTION=GPRename is a complete batch renamer for files and directories
 EAPI=7
 HOMEPAGE=http://gprename.sourceforge.net/
+INHERIT=desktop
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-3
 RDEPEND=dev-lang/perl dev-perl/glib-perl dev-perl/Gtk2 dev-perl/libintl-perl dev-perl/Locale-gettext sys-devel/gettext
