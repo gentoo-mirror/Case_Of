@@ -25,10 +25,11 @@ RDEPEND="
 		>=dev-python/django-cors-headers-3.2.1[${PYTHON_USEDEP}]
 		>=dev-python/djangorestframework-3.11.0[${PYTHON_USEDEP}]
 		>=dev-python/drf-nested-routers-0.91[${PYTHON_USEDEP}]
+		dev-python/httptools[${PYTHON_USEDEP}]
 		>=dev-python/msgpack-1.0.0[${PYTHON_USEDEP}]
 		>=dev-python/pynacl-1.3.0[${PYTHON_USEDEP}]
 		>=dev-python/pytz-2019.3[${PYTHON_USEDEP}]
-		www-servers/uvicorn[${PYTHON_USEDEP}]
+		dev-python/uvicorn[${PYTHON_USEDEP}]
 	')
 "
 
