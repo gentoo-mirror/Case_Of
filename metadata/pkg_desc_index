@@ -9,6 +9,8 @@ games-strategy/hedgewars 9999: A turn-based strategy, artillery, action and come
 gnome-extra/evolution-etesync 1.0.0: EteSync plugin for Evolution
 net-libs/libetebase 0.5.0: C library for etebase
 net-misc/etebase-server 0.6.1 0.7.0: The Etebase server
+net-misc/seafile 8.0.2: File syncing and sharing software with file encryption and group sharing
+net-misc/seafile-client 8.0.2: Seafile desktop client
 sys-apps/gprename 20160905: GPRename is a complete batch renamer for files and directories
 x11-misc/albert 0.17.2: A fast and flexible keyboard launcher
 x11-misc/clipit 1.4.5: Lightweight GTK+ clipboard manager. Fork of Parcellite.
