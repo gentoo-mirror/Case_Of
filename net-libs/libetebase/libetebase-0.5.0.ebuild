@@ -171,10 +171,8 @@ LICENSE="Apache-2.0
 	ZLIB"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="libressl"
 
-RDEPEND="!libressl? ( dev-libs/openssl:= )
-	libressl? ( dev-libs/libressl:= )"
+RDEPEND="dev-libs/openssl:="
 DEPEND="${RDEPEND}"
 
 PATCHES=( "${FILESDIR}/${P}-cargo-dependency.patch" )
