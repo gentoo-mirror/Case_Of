@@ -1,4 +1,4 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -12,7 +12,7 @@ SRC_URI="https://github.com/Martchus/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 LICENSE="GPL-2+"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="kde libressl qml script static-libs systemd webengine webkit"
+IUSE="kde qml script static-libs systemd webengine webkit"
 
 REQUIRED_USE="
 	qml? ( !script )
@@ -22,6 +22,7 @@ REQUIRED_USE="
 "
 
 RDEPEND="
+	dev-libs/openssl:=
 	dev-qt/qtconcurrent:5
 	dev-qt/qtcore:5
 	dev-qt/qtnetwork:5
@@ -31,8 +32,6 @@ RDEPEND="
 		kde-frameworks/kio:5
 		kde-frameworks/plasma:5
 	)
-	!libressl? ( dev-libs/openssl:= )
-	libressl? ( dev-libs/libressl:= )
 	qml? ( dev-qt/qtdeclarative:5 )
 	script? ( dev-qt/qtscript:5 )
 	systemd? ( dev-qt/qtdbus:5 )
