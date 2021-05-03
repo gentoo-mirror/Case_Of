@@ -73,7 +73,7 @@ num_cpus-1.13.0
 once_cell-1.4.0
 openssl-0.10.30
 openssl-probe-0.1.2
-openssl-sys-0.9.61
+openssl-sys-0.9.62
 percent-encoding-2.1.0
 pin-project-0.4.23
 pin-project-internal-0.4.23
