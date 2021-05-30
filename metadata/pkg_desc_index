@@ -7,6 +7,7 @@ dev-util/cpp-utilities 5.6.0 5.8.0 5.10.1: Common C++ classes and routines such 
 dev-util/qtutilities 6.2.1 6.3.1 6.3.3: Common Qt related C++ classes and routines used by my applications such as dialogs, widgets and models
 games-strategy/hedgewars 9999: A turn-based strategy, artillery, action and comedy game
 gnome-extra/evolution-etesync 1.0.0: EteSync plugin for Evolution
+media-sound/whipper 0.10.0: A Python CD-DA ripper preferring accuracy over speed (forked from morituri)
 net-libs/libetebase 0.5.0: C library for etebase
 net-misc/etebase-server 0.6.1 0.7.0: The Etebase server
 net-misc/subnetcalc 2.4.18: IP address calculator
