@@ -30,4 +30,5 @@ src_configure() {
 		-DFORK_AWESOME_FONT_FILE="${WORKDIR}/Fork-Awesome-${FORKAWESOME_PV}/fonts/forkawesome-webfont.woff2"
 		-DFORK_AWESOME_ICON_DEFINITIONS="${WORKDIR}/Fork-Awesome-${FORKAWESOME_PV}/src/icons/icons.yml"
 	)
+	cmake_src_configure
 }
