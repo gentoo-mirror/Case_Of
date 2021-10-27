@@ -12,13 +12,11 @@ SRC_URI="https://github.com/Martchus/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 LICENSE="GPL-2+"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="kde qml script static-libs systemd webengine webkit"
+IUSE="kde qml script static-libs systemd webengine"
 
 REQUIRED_USE="
 	qml? ( !script )
 	script? ( !qml )
-	webengine? ( !webkit )
-	webkit? ( !webengine )
 "
 
 RDEPEND="
@@ -36,7 +34,6 @@ RDEPEND="
 	script? ( dev-qt/qtscript:5 )
 	systemd? ( dev-qt/qtdbus:5 )
 	webengine? ( dev-qt/qtwebengine:5 )
-	webkit? ( dev-qt/qtwebkit:5 )
 "
 DEPEND="${RDEPEND}
 	kde? (
@@ -52,7 +49,7 @@ src_configure() {
 	local mycmakeargs=(
 		-DCMAKE_BUILD_TYPE:STRING=Release
 		-DBUILD_SHARED_LIBS:BOOL=$(usex !static-libs)
-		-DWEBVIEW_PROVIDER="$(usex webengine webengine $(usex webkit webkit none))"
+		-DWEBVIEW_PROVIDER="$(usex webengine webengine none)"
 		-DJS_PROVIDER="$(usex qml qml $(usex script script none))"
 		-DSYSTEMD_SUPPORT=$(usex systemd)
 		-DNO_FILE_ITEM_ACTION_PLUGIN=$(usex !kde)
