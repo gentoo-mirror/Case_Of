@@ -25,6 +25,7 @@ RDEPEND="
 	dev-qt/qtcore:5
 	dev-qt/qtnetwork:5
 	dev-qt/qtsvg:5
+	dev-util/qtforkawesome
 	dev-util/qtutilities
 	kde? (
 		kde-frameworks/kio:5
