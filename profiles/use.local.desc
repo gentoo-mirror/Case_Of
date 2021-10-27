@@ -14,4 +14,3 @@ x11-misc/clipit:gtk3 - Enable GTK+ 3 support
 x11-plugins/syncthingtray:qml - Use QML as Javascript provider
 x11-plugins/syncthingtray:script - Use dev-qt/qtscript as Javascript provider
 x11-plugins/syncthingtray:webengine - Use dev-qt/qtwebengine as HTML rendering engine
-x11-plugins/syncthingtray:webkit - Use dev-qt/qtwebkit as HTML rendering engine
