@@ -8,7 +8,7 @@ FORKAWESOME_PV="1.2.0"
 inherit cmake
 
 DESCRIPTION="Library that bundles ForkAwesome for use within Qt applications"
-HOMEPAGE="https://github.com/Martchus/qtforkawesomee"
+HOMEPAGE="https://github.com/Martchus/qtforkawesome"
 SRC_URI="https://github.com/Martchus/qtforkawesome/archive/v${PV}.tar.gz -> ${P}.tar.gz
 	https://github.com/ForkAwesome/Fork-Awesome/archive/refs/tags/${FORKAWESOME_PV}.tar.gz -> Fork-Awesome-${FORKAWESOME_PV}.tar.gz"
 
