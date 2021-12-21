@@ -1,7 +1,7 @@
 app-editors/apostrophe 2.5: A distraction free Markdown editor for GNU/Linux made with GTK+
 app-office/grammalecte 2.1.2: French grammar checker extension for LibreOffice.
 dev-python/drf-nested-routers 0.92.5 0.93.3: Nested Routers for Django Rest Framework
-dev-python/httptools 0.1.1: Fast HTTP Parser
+dev-python/httptools 0.1.1 0.3.0: Fast HTTP Parser
 dev-python/pypandoc 1.5 1.6.4: Pypandoc provides a thin wrapper for pandoc, a universal document converter
 dev-util/cpp-utilities 5.6.0 5.8.0 5.10.1 5.10.5 5.11.2: Common C++ classes and routines such as argument parser, IO and conversion utilities
 dev-util/qtforkawesome 0.0.1: Library that bundles ForkAwesome for use within Qt applications
