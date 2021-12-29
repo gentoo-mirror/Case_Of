@@ -17,11 +17,12 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="static-libs"
 
-RDEPEND="dev-perl/YAML-LibYAML
+DEPEND="dev-perl/YAML-LibYAML
 	dev-qt/qtcore:5
 	dev-qt/qtgui:5
 	dev-util/qtutilities"
-DEPEND="${RDEPEND}"
+RDEPEND="${DEPEND}
+	media-libs/freetype:2[brotli]"
 
 src_configure() {
 	local mycmakeargs=(
