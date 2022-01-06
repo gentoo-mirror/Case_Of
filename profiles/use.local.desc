@@ -4,7 +4,6 @@
 
 games-strategy/hedgewars:pas2c - Use experimental Pascal to C convertor
 games-strategy/hedgewars:server - Enable local server
-net-misc/seafile-client:shibboleth - Build support for Shibboleth single sign-on
 x11-misc/albert:debug - Enable debugging informations
 x11-misc/albert:python-extensions - Install default python extensions system-wide
 x11-misc/albert:statistics - Enable local statistics
