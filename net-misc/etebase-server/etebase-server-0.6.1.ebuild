@@ -1,4 +1,4 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -22,6 +22,7 @@ RDEPEND="
 	${PYTHON_DEPS}
 	$(python_gen_cond_dep '
 		>=dev-python/django-3.1.1[${PYTHON_USEDEP},sqlite]
+		<dev-python/django-4.0.0[${PYTHON_USEDEP},sqlite]
 		>=dev-python/django-cors-headers-3.2.1[${PYTHON_USEDEP}]
 		>=dev-python/djangorestframework-3.11.0[${PYTHON_USEDEP}]
 		>=dev-python/drf-nested-routers-0.91[${PYTHON_USEDEP}]
