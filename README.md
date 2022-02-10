@@ -26,7 +26,7 @@ layman -fa Case_Of
 priority = 1000
 location = /path/to/Case_Of-overlay
 sync-type = git
-sync-uri = https://framagit.org/Case_Of/gentoo-overlay.git
+sync-uri = https://codeberg.org/Case_Of/gentoo-overlay.git
 ```
 
 ## Signature
