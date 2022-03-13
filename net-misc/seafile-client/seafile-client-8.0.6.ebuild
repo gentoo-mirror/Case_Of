@@ -3,7 +3,7 @@
 
 EAPI=8
 
-RELEASE_COMMIT="484d80075f9dbcf49d80036e84ed67d47b8cedd4"
+RELEASE_COMMIT="1fb9ddd71fbf6f0252509aced527be459e240366"
 
 inherit xdg cmake
 

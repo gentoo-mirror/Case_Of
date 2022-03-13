@@ -5,7 +5,7 @@ EAPI=7
 
 PYTHON_COMPAT=( python3_{8..10} )
 
-RELEASE_COMMIT="28ede40ebeca4f046c1d6625ac69fd4949e66042"
+RELEASE_COMMIT="7a61feaba63006d11c09d1020593ba3fcb3fc717"
 
 inherit autotools python-single-r1 vala
 
