@@ -36,7 +36,7 @@ DEPEND="${RDEPEND}
 BDEPEND="dev-qt/linguist-tools:5"
 
 PATCHES=(
-	"${FILESDIR}/${PN}-select-qt5.patch"
+	"${FILESDIR}/${PN}-8.0.6-select-qt5.patch"
 	"${FILESDIR}/${PN}-7.0.9-qt-5.15.patch"
 )
 
