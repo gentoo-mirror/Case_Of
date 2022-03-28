@@ -9,7 +9,7 @@ dev-util/qtforkawesome 0.0.1 0.0.2: Library that bundles ForkAwesome for use wit
 dev-util/qtutilities 6.2.1 6.3.1 6.3.3 6.4.2 6.5.1 6.5.3: Common Qt related C++ classes and routines used by my applications such as dialogs, widgets and models
 games-strategy/hedgewars 9999: A turn-based strategy, artillery, action and comedy game
 gnome-extra/evolution-etesync 1.0.0 1.1.0: EteSync plugin for Evolution
-net-libs/libetebase 0.5.0: C library for etebase
+net-libs/libetebase 0.5.0 0.5.2: C library for etebase
 net-misc/etebase-server 0.6.1 0.7.0 0.8.3: The Etebase server
 net-misc/seafile 8.0.6: File syncing and sharing software with file encryption and group sharing
 net-misc/seafile-client 8.0.6: Seafile desktop client
