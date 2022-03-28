@@ -1,0 +1,2 @@
+# python 'gi' module not found
+=app-editors/apostrophe-2.6.1
