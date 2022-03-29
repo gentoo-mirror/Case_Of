@@ -19,7 +19,7 @@ REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 RDEPEND="
 	${PYTHON_DEPS}
-	app-text/gspell
+	app-text/gspell[introspection]
 	dev-python/regex[${PYTHON_USEDEP}]
 	dev-python/pycairo[${PYTHON_USEDEP}]
 	dev-python/pyenchant[${PYTHON_USEDEP}]
@@ -27,13 +27,20 @@ RDEPEND="
 	dev-python/pypandoc[${PYTHON_USEDEP}]
 	dev-python/python-levenshtein[${PYTHON_USEDEP}]
 	gnome-base/gsettings-desktop-schemas
-	gui-libs/libhandy:1
-	net-libs/webkit-gtk
+	>=gui-libs/libhandy-1.6.1:1[introspection]
+	net-libs/webkit-gtk[introspection]
+	x11-libs/gdk-pixbuf[introspection]
+	x11-libs/gtk+:3[introspection]
+	x11-libs/pango[introspection]
 "
-DEPEND="
+BDEPEND="
 	${PYTHON_DEPS}
 	dev-lang/sassc
+	dev-libs/glib
 	dev-libs/gobject-introspection
+	sys-devel/gettext
+"
+DEPEND="
 	gnome-base/gsettings-desktop-schemas
 	test? ( dev-libs/appstream-glib )
 "
