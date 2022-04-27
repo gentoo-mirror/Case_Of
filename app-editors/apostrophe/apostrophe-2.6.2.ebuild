@@ -8,8 +8,8 @@ PYTHON_COMPAT=( python3_{8,9,10} )
 inherit distutils-r1 gnome2-utils meson xdg
 
 DESCRIPTION="A distraction free Markdown editor for GNU/Linux made with GTK+"
-HOMEPAGE="https://apps.gnome.org/app/org.gnome.gitlab.somas.Apostrophe"
-SRC_URI="https://gitlab.gnome.org/somas/apostrophe/-/archive/v${PV}/${PN}-v${PV}.tar.gz"
+HOMEPAGE="https://apps.gnome.org/app/org.gnome.gitlab.somas.Apostrophe https://gitlab.gnome.org/World/apostrophe"
+SRC_URI="https://gitlab.gnome.org/World/apostrophe/-/archive/v${PV}/${PN}-v${PV}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
