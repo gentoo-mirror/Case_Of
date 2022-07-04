@@ -20,5 +20,5 @@ RESTRICT="test"
 
 RDEPEND="
 	dev-python/pydantic[${PYTHON_USEDEP}]
-	~dev-python/starlette-0.17.1[${PYTHON_USEDEP}]
+	>=dev-python/starlette-0.19.1[${PYTHON_USEDEP}]
 "
