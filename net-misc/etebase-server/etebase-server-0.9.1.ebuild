@@ -3,7 +3,7 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{6,7,8,9} )
+PYTHON_COMPAT=( python3_{9,10} )
 
 inherit eutils python-single-r1 systemd
 
@@ -21,18 +21,24 @@ S="${WORKDIR}/server-${PV}"
 RDEPEND="
 	${PYTHON_DEPS}
 	$(python_gen_cond_dep '
-		>=dev-python/django-3.1.1[${PYTHON_USEDEP},sqlite]
+		>=dev-python/aiofiles-0.8.0[${PYTHON_USEDEP}]
+		>=dev-python/django-3.2.12[${PYTHON_USEDEP},sqlite]
 		<dev-python/django-4.0.0[${PYTHON_USEDEP},sqlite]
-		>=dev-python/django-cors-headers-3.2.1[${PYTHON_USEDEP}]
-		>=dev-python/djangorestframework-3.11.0[${PYTHON_USEDEP}]
-		>=dev-python/drf-nested-routers-0.91[${PYTHON_USEDEP}]
-		dev-python/httptools[${PYTHON_USEDEP}]
-		>=dev-python/msgpack-1.0.0[${PYTHON_USEDEP}]
-		>=dev-python/pynacl-1.3.0[${PYTHON_USEDEP}]
-		>=dev-python/pytz-2019.3[${PYTHON_USEDEP}]
-		dev-python/uvicorn[${PYTHON_USEDEP}]
+		>=dev-python/fastapi-0.75.0[${PYTHON_USEDEP}]
+		>=dev-python/httptools-0.4.0[${PYTHON_USEDEP}]
+		>=dev-python/msgpack-1.0.3[${PYTHON_USEDEP}]
+		>=dev-python/pynacl-1.5.0[${PYTHON_USEDEP}]
+		>=dev-python/python-dotenv-0.19.2[${PYTHON_USEDEP}]
+		>=dev-python/pytz-2022.1[${PYTHON_USEDEP}]
+		>=dev-python/pyyaml-6.0[${PYTHON_USEDEP}]
+		>=dev-python/redis-py-4.2.0[${PYTHON_USEDEP}]
+		>=dev-python/uvicorn-0.17.6[${PYTHON_USEDEP}]
+		>=dev-python/uvloop-0.16.0[${PYTHON_USEDEP}]
+		>=dev-python/watchgod-0.8.1[${PYTHON_USEDEP}]
+		>=dev-python/websockets-10.2[${PYTHON_USEDEP}]
 	')
 "
+#>=dev-python/aioredis-2.0.1[${PYTHON_USEDEP}] # replaced by dev-python/redis-py (Bug #860840)
 
 src_prepare() {
 	sed -e "s:secret.txt:${EPREFIX}/var/lib/${PN}/&:" -e "s:db.sqlite3:${EPREFIX}/var/lib/${PN}/&:" -i "${S}/${PN}.ini.example" || die
