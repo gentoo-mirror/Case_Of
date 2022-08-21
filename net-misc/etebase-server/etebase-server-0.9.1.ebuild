@@ -49,7 +49,7 @@ src_install() {
 	dodoc ChangeLog.md ${PN}.ini.example README.md
 	insinto /etc/${PN}
 	newins ${PN}.ini.example ${PN}.ini
-	rm ChangeLog.md ${PN}.ini.example icon.svg LICENSE README.md .github .gitignore || die
+	rm -r ChangeLog.md ${PN}.ini.example icon.svg LICENSE README.md .github .gitignore || die
 	python_fix_shebang manage.py
 	insinto /usr/$(get_libdir)/${PN}
 	doins -r .
