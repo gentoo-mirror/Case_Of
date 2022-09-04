@@ -1,6 +1,6 @@
 app-editors/apostrophe 2.6.3: A distraction free Markdown editor for GNU/Linux made with GTK+
 app-office/grammalecte 2.1.2: French grammar checker extension for LibreOffice.
-dev-python/fastapi 0.79.1: High performance, easy to learn, fast to code, ready for production
+dev-python/fastapi 0.81.0: High performance, easy to learn, fast to code, ready for production
 dev-python/httptools 0.1.1 0.3.0 0.4.0: Fast HTTP Parser
 dev-python/pypandoc 1.7.5: Pypandoc provides a thin wrapper for pandoc, a universal document converter
 dev-util/cpp-utilities 5.18.0: Common C++ classes and routines such as argument parser, IO and conversion utilities
