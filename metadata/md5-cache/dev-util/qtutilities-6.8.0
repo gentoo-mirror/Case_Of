@@ -1,15 +1,15 @@
 BDEPEND=>=dev-util/ninja-1.8.2 >=dev-util/cmake-3.20.5
 DEFINED_PHASES=compile configure install prepare test
-DEPEND=test? ( dev-util/cppunit )
-DESCRIPTION=Common C++ classes and routines such as argument parser, IO and conversion utilities
+DEPEND=dev-qt/qtcore:5 dev-qt/qtdbus:5 dev-qt/qtgui:5 dev-qt/qttest:5 dev-qt/qtwidgets:5 dev-util/cpp-utilities dev-qt/linguist-tools:5
+DESCRIPTION=Common Qt related C++ classes and routines used by my applications such as dialogs, widgets and models
 EAPI=7
-HOMEPAGE=https://github.com/Martchus/cpp-utilities
+HOMEPAGE=https://github.com/Martchus/qtutilities
 INHERIT=cmake
-IUSE=static-libs test
+IUSE=static-libs
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2+
-RESTRICT=!test? ( test )
+RDEPEND=dev-qt/qtcore:5 dev-qt/qtdbus:5 dev-qt/qtgui:5 dev-qt/qttest:5 dev-qt/qtwidgets:5 dev-util/cpp-utilities
 SLOT=0
-SRC_URI=https://github.com/Martchus/cpp-utilities/archive/v5.18.0.tar.gz -> cpp-utilities-5.18.0.tar.gz
+SRC_URI=https://github.com/Martchus/qtutilities/archive/v6.8.0.tar.gz -> qtutilities-6.8.0.tar.gz
 _eclasses_=toolchain-funcs	1542e649be915f43f6908a9e93909961	multilib	5ca4e49abed8e3a2f7b56920eadee157	edos2unix	33e347e171066657f91f8b0c72ec8773	strip-linguas	ac3ee41ee2d31d8c41a77c0838320cc7	wrapper	4a1902f969e5718126434fc35f3a0d9c	eutils	8f942ebdcf04334697649d4a0bf65a32	flag-o-matic	29a755b1291d64133634d80b0328f153	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	58ec4e54962bf45d065fb95030701514	xdg-utils	fffb53a53cf17c9c0c998a3c0a590c7e	cmake	44afbf15c35884f7c840470f1cf05d0d
-_md5_=78428d8dae727958a504b25f9edec2a2
+_md5_=3201c6ff9ce7bad22936cf47012bfb78
