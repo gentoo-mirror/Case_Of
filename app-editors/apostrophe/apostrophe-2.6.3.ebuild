@@ -25,7 +25,7 @@ RDEPEND="
 	dev-python/pyenchant[${PYTHON_USEDEP}]
 	dev-python/pygobject[${PYTHON_USEDEP}]
 	dev-python/pypandoc[${PYTHON_USEDEP}]
-	dev-python/python-levenshtein[${PYTHON_USEDEP}]
+	dev-python/Levenshtein[${PYTHON_USEDEP}]
 	gnome-base/gsettings-desktop-schemas
 	>=gui-libs/libhandy-1.6.1:1[introspection]
 	net-libs/webkit-gtk[introspection]
