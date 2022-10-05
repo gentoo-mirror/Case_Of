@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit cmake desktop xdg-utils
+inherit cmake
 
 DESCRIPTION="Tray application for Syncthing"
 HOMEPAGE="https://github.com/Martchus/syncthingtray"
