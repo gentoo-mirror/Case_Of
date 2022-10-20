@@ -9,5 +9,5 @@ LICENSE=GPL-3
 RDEPEND=dev-lang/perl dev-perl/glib-perl dev-perl/Gtk2 dev-perl/libintl-perl dev-perl/Locale-gettext sys-devel/gettext
 SLOT=0
 SRC_URI=mirror://sourceforge/gprename/gprename-20160905.tar.bz2
-_eclasses_=desktop	22952d8f27cac191d75529d4c38e6bfa
+_eclasses_=desktop	7eb20ad915a0a318176d51bc2508ff5c
 _md5_=121350edd48aeaa249a37baf1d11c364
