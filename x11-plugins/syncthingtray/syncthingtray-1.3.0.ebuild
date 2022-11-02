@@ -42,7 +42,7 @@ DEPEND="${RDEPEND}
 	)
 "
 
-RESTRICT="test" #tests want to access network
+RESTRICT="mirror test" #tests want to access network
 
 src_configure() {
 	local mycmakeargs=(
