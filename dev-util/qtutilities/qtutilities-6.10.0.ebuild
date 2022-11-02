@@ -25,6 +25,8 @@ RDEPEND="
 DEPEND="${RDEPEND}
 	dev-qt/linguist-tools:5"
 
+RESTRICT="mirror"
+
 src_configure() {
 	local mycmakeargs=(
 		-DCMAKE_BUILD_TYPE=Release

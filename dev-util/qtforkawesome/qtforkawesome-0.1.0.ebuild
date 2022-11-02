@@ -24,6 +24,8 @@ DEPEND="dev-perl/YAML-LibYAML
 RDEPEND="${DEPEND}
 	media-libs/freetype:2[brotli]"
 
+RESTRICT="mirror"
+
 src_configure() {
 	local mycmakeargs=(
 		-DBUILD_SHARED_LIBS:BOOL=$(usex !static-libs)

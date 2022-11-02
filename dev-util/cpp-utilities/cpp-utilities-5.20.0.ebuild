@@ -16,7 +16,10 @@ IUSE="static-libs test"
 
 DEPEND="test? ( dev-util/cppunit )"
 
-RESTRICT="!test? ( test )"
+RESTRICT="
+	!test? ( test )
+	mirror
+"
 
 src_configure() {
 	local mycmakeargs=(
