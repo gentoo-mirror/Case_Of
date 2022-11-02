@@ -3,9 +3,9 @@ app-office/grammalecte 2.1.2: French grammar checker extension for LibreOffice.
 dev-python/fastapi 0.85.0: High performance, easy to learn, fast to code, ready for production
 dev-python/httptools 0.1.1 0.3.0 0.4.0: Fast HTTP Parser
 dev-python/pypandoc 1.7.5: Pypandoc provides a thin wrapper for pandoc, a universal document converter
-dev-util/cpp-utilities 5.19.0: Common C++ classes and routines such as argument parser, IO and conversion utilities
-dev-util/qtforkawesome 0.0.4: Library that bundles ForkAwesome for use within Qt applications
-dev-util/qtutilities 6.9.0: Common Qt related C++ classes and routines used by my applications such as dialogs, widgets and models
+dev-util/cpp-utilities 5.20.0: Common C++ classes and routines such as argument parser, IO and conversion utilities
+dev-util/qtforkawesome 0.1.0: Library that bundles ForkAwesome for use within Qt applications
+dev-util/qtutilities 6.10.0: Common Qt related C++ classes and routines used by my applications such as dialogs, widgets and models
 games-strategy/hedgewars 9999: A turn-based strategy, artillery, action and comedy game
 gnome-extra/evolution-etesync 1.0.0 1.1.0: EteSync plugin for Evolution
 net-libs/libetebase 0.5.0 0.5.2 0.5.3: C library for etebase
@@ -14,4 +14,4 @@ net-misc/subnetcalc 2.4.18 2.4.19: IP address calculator
 sys-apps/gprename 20160905: GPRename is a complete batch renamer for files and directories
 x11-misc/clipit 1.4.5: Lightweight GTK+ clipboard manager. Fork of Parcellite.
 x11-misc/gcolor2 0.4-r4: A GTK+ color selector
-x11-plugins/syncthingtray 1.2.4: Tray application for Syncthing
+x11-plugins/syncthingtray 1.3.0: Tray application for Syncthing
