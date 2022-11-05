@@ -39,9 +39,6 @@ RDEPEND="
 	')
 "
 
-# https://github.com/etesync/server/pull/151
-PATCHES=("${FILESDIR}/${P}-replace-aioredis-with-redis-py.patch")
-
 src_prepare() {
 	sed -e "s:secret.txt:${EPREFIX}/var/lib/${PN}/&:" -e "s:db.sqlite3:${EPREFIX}/var/lib/${PN}/&:" -i "${S}/${PN}.ini.example" || die
 	default
