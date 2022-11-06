@@ -4,6 +4,7 @@
 EAPI=7
 
 PYTHON_COMPAT=( python3_{8,9,10,11} )
+DISTUTILS_USE_PEP517="poetry"
 
 inherit distutils-r1
 
@@ -27,6 +28,7 @@ DEPEND="
 	${RDEPEND}
 	dev-python/installer[${PYTHON_USEDEP}]
 	>=dev-python/pandocfilters-1.5.0[${PYTHON_USEDEP}]
+	dev-python/pip[${PYTHON_USEDEP}]
 	dev-python/poetry-core[${PYTHON_USEDEP}]
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	dev-python/urllib3[${PYTHON_USEDEP}]
