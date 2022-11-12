@@ -34,7 +34,6 @@ RDEPEND="
 		>=dev-python/redis-py-4.2.0[${PYTHON_USEDEP}]
 		>=dev-python/uvicorn-0.17.6[${PYTHON_USEDEP}]
 		>=dev-python/uvloop-0.16.0[${PYTHON_USEDEP}]
-		>=dev-python/watchgod-0.8.1[${PYTHON_USEDEP}]
 		>=dev-python/websockets-10.2[${PYTHON_USEDEP}]
 	')
 "
