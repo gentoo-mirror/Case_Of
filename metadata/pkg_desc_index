@@ -8,6 +8,7 @@ dev-util/qtforkawesome 0.1.0: Library that bundles ForkAwesome for use within Qt
 dev-util/qtutilities 6.10.0: Common Qt related C++ classes and routines used by my applications such as dialogs, widgets and models
 games-strategy/hedgewars 9999: A turn-based strategy, artillery, action and comedy game
 gnome-extra/evolution-etesync 1.0.0 1.1.0: EteSync plugin for Evolution
+gui-apps/gcolor3 2.4.0: A simple color chooser written in GTK3
 net-libs/libetebase 0.5.0 0.5.2 0.5.3: C library for etebase
 net-misc/etebase-server 0.10.0: The Etebase server
 net-misc/subnetcalc 2.4.18 2.4.19 2.4.20: IP address calculator
