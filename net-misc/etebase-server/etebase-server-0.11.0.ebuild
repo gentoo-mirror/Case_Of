@@ -5,11 +5,11 @@ EAPI=7
 
 PYTHON_COMPAT=( python3_{9,10} )
 
-inherit eutils python-single-r1 systemd
+inherit python-single-r1 systemd wrapper
 
 DESCRIPTION="The Etebase server"
 HOMEPAGE="https://www.etesync.com https://github.com/etesync/server"
-SRC_URI="https://github.com/etesync/server/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/etesync/server/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="AGPL-3"
 SLOT="0"
@@ -21,20 +21,21 @@ S="${WORKDIR}/server-${PV}"
 RDEPEND="
 	${PYTHON_DEPS}
 	$(python_gen_cond_dep '
-		>=dev-python/aiofiles-0.8.0[${PYTHON_USEDEP}]
-		>=dev-python/django-3.2.12[${PYTHON_USEDEP},sqlite]
+		>=dev-python/aiofiles-22.1.0[${PYTHON_USEDEP}]
+		>=dev-python/django-3.2.16[${PYTHON_USEDEP},sqlite]
 		<dev-python/django-4.0.0[${PYTHON_USEDEP},sqlite]
-		>=dev-python/fastapi-0.75.0[${PYTHON_USEDEP}]
-		>=dev-python/httptools-0.4.0[${PYTHON_USEDEP}]
-		>=dev-python/msgpack-1.0.3[${PYTHON_USEDEP}]
+		>=dev-python/fastapi-0.88.0[${PYTHON_USEDEP}]
+		>=dev-python/httptools-0.5.0[${PYTHON_USEDEP}]
+		>=dev-python/msgpack-1.0.4[${PYTHON_USEDEP}]
 		>=dev-python/pynacl-1.5.0[${PYTHON_USEDEP}]
-		>=dev-python/python-dotenv-0.19.2[${PYTHON_USEDEP}]
-		>=dev-python/pytz-2022.1[${PYTHON_USEDEP}]
+		>=dev-python/python-dotenv-0.21.0[${PYTHON_USEDEP}]
+		>=dev-python/pytz-2022.6[${PYTHON_USEDEP}]
 		>=dev-python/pyyaml-6.0[${PYTHON_USEDEP}]
-		>=dev-python/redis-py-4.2.0[${PYTHON_USEDEP}]
-		>=dev-python/uvicorn-0.17.6[${PYTHON_USEDEP}]
-		>=dev-python/uvloop-0.16.0[${PYTHON_USEDEP}]
-		>=dev-python/websockets-10.2[${PYTHON_USEDEP}]
+		>=dev-python/redis-py-4.4.0[${PYTHON_USEDEP}]
+		>=dev-python/typing-extensions-4.4.0[${PYTHON_USEDEP}]
+		>=dev-python/uvicorn-0.20.0[${PYTHON_USEDEP}]
+		>=dev-python/uvloop-0.17.0[${PYTHON_USEDEP}]
+		>=dev-python/websockets-10.4[${PYTHON_USEDEP}]
 	')
 "
 
