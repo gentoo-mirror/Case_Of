@@ -1,4 +1,4 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -20,5 +20,5 @@ RESTRICT="test"
 
 RDEPEND="
 	dev-python/pydantic[${PYTHON_USEDEP}]
-	>=dev-python/starlette-0.22.0[${PYTHON_USEDEP}]
+	>=dev-python/starlette-0.23.0[${PYTHON_USEDEP}]
 "
