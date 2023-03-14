@@ -21,5 +21,5 @@ RESTRICT="test"
 BDEPEND=">=dev-python/hatchling-1.13.0[${PYTHON_USEDEP}]"
 RDEPEND="
 	dev-python/pydantic[${PYTHON_USEDEP}]
-	>=dev-python/starlette-0.25.0[${PYTHON_USEDEP}]
+	>=dev-python/starlette-0.26.1[${PYTHON_USEDEP}]
 "
