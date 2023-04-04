@@ -20,7 +20,7 @@ IUSE="static-libs"
 DEPEND="dev-perl/YAML-LibYAML
 	dev-qt/qtcore:5
 	dev-qt/qtgui:5
-	dev-util/qtutilities"
+	dev-libs/qtutilities"
 RDEPEND="${DEPEND}
 	media-libs/freetype:2[brotli]"
 

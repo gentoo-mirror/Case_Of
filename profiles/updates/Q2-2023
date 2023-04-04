@@ -1,1 +1,2 @@
 move dev-util/cpp-utilities dev-libs/cpp-utilities
+move dev-util/qtutilities dev-libs/qtutilities
