@@ -20,7 +20,7 @@ RDEPEND="
 	dev-qt/qtgui:5
 	dev-qt/qttest:5
 	dev-qt/qtwidgets:5
-	dev-util/cpp-utilities
+	dev-libs/cpp-utilities
 "
 DEPEND="${RDEPEND}
 	dev-qt/linguist-tools:5"
