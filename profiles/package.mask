@@ -2,3 +2,4 @@
 # These packages are masked until Qt6 is considered ready on Gentoo portage tree
 dev-qt/qtscxml:6
 >=x11-misc/albert-0.20.13
+x11-themes/qt6gtk2
