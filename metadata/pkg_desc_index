@@ -7,7 +7,7 @@ dev-libs/qtutilities 6.12.0: Common Qt related C++ classes and routines used by 
 dev-python/fastapi 0.95.1: High performance, easy to learn, fast to code, ready for production
 dev-python/httptools 0.5.0: Fast HTTP Parser
 dev-python/pypandoc 1.7.5 1.10 1.11: Pypandoc provides a thin wrapper for pandoc, a universal document converter
-dev-qt/qtscxml 6.4.3: State Chart XML (SCXML) support library for the Qt6 framework
+dev-qt/qtscxml 6.5.0: State Chart XML (SCXML) support library for the Qt6 framework
 games-strategy/hedgewars 9999: A turn-based strategy, artillery, action and comedy game
 gnome-extra/evolution-etesync 1.0.0 1.1.0 1.1.1: EteSync plugin for Evolution
 gui-apps/gcolor3 2.4.0: A simple color chooser written in GTK3
