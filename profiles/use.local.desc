@@ -2,13 +2,8 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
-dev-libs/qhotkey:qt6 - Use Qt6 dependencies
 games-strategy/hedgewars:pas2c - Use experimental Pascal to C convertor
 games-strategy/hedgewars:server - Enable local server
-x11-misc/albert:debug - Enable debugging informations
-x11-misc/albert:python-extensions - Install default python extensions system-wide
-x11-misc/albert:statistics - Enable local statistics
-x11-misc/albert:virtualbox - Enable app-emulation/virtualbox extension
 x11-misc/clipit:appindicator - Enable support for appindicator
 x11-misc/clipit:gtk3 - Enable GTK+ 3 support
 x11-plugins/syncthingtray:qml - Use QML as Javascript provider
