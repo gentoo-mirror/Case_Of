@@ -1,0 +1,37 @@
+diff --git a/app/NUT-Monitor-py3qt5.in b/app/NUT-Monitor-py3qt5.in
+index cf1c3b6..c13cf3d 100755
+--- a/app/NUT-Monitor-py3qt5.in
++++ b/app/NUT-Monitor-py3qt5.in
+@@ -80,6 +80,7 @@ class interface :
+ 
+ 
+         self.__app = QApplication( argv )
++        self.__app.setApplicationName("NUT-Monitor")
+ 
+         self.__ui_file = self.__find_res_file( 'ui', "window1.ui" )
+ 
+@@ -205,22 +206,14 @@ class interface :
+ 
+     def __find_res_file( self, ftype, filename ) :
+         filename = os.path.join( ftype, filename )
+-        # TODO: Skip checking application directory if installed
+-        path = os.path.join( os.path.dirname( sys.argv[0] ), filename )
+-        if os.path.exists(path):
+-            return path
+-        path = QStandardPaths.locate(QStandardPaths.AppDataLocation, filename)
++        path = QStandardPaths.locate(QStandardPaths.DataLocation, filename)
+         if os.path.exists(path):
+             return path
+         raise RuntimeError("Cannot find %s resource %s" % (ftype, filename))
+ 
+     def __find_icon_file( self ) :
+         filename = 'nut-monitor.png'
+-        # TODO: Skip checking application directory if installed
+-        path = os.path.join( os.path.dirname( sys.argv[0] ), "icons", "256x256", filename )
+-        if os.path.exists(path):
+-            return path
+-        path = QStandardPaths.locate(QStandardPaths.AppDataLocation, os.path.join( "icons", "hicolor", "256x256", "apps", filename ) )
++        path = QStandardPaths.locate(QStandardPaths.GenericDataLocation, os.path.join( "icons", "hicolor", "256x256", "apps", filename ) )
+         if os.path.exists(path):
+             return path
+         raise RuntimeError("Cannot find %s resource %s" % ('icon', filename))
