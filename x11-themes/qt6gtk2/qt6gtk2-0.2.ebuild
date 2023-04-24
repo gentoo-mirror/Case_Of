@@ -11,7 +11,7 @@ KEYWORDS="~amd64"
 
 SRC_URI="https://github.com/trialuser02/${PN}/releases/download/${PV}/${P}.tar.xz"
 
-RDEPEND="dev-qt/qtbase:6
+RDEPEND="dev-qt/qtbase:6=
 	x11-libs/gtk+:2
 	x11-libs/libX11"
 DEPEND="${RDEPEND}"
