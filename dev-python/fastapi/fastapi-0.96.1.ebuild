@@ -10,7 +10,7 @@ inherit distutils-r1
 
 DESCRIPTION="High performance, easy to learn, fast to code, ready for production"
 HOMEPAGE="https://fastapi.tiangolo.com/ https://github.com/tiangolo/fastapi"
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
+SRC_URI="https://github.com/tiangolo/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT=0
@@ -20,6 +20,6 @@ RESTRICT="test"
 
 BDEPEND=">=dev-python/hatchling-1.13.0[${PYTHON_USEDEP}]"
 RDEPEND="
-	dev-python/pydantic[${PYTHON_USEDEP}]
-	>=dev-python/starlette-0.26.1[${PYTHON_USEDEP}]
+	>=dev-python/pydantic-1.7.4[${PYTHON_USEDEP}]
+	>=dev-python/starlette-0.27.0[${PYTHON_USEDEP}]
 "
