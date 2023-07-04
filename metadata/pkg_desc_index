@@ -1,8 +1,8 @@
 app-editors/apostrophe 2.6.3: A distraction free Markdown editor for GNU/Linux made with GTK+
 app-office/grammalecte 2.1.2: French grammar checker extension for LibreOffice.
-dev-libs/cpp-utilities 5.23.0: Common C++ classes and routines such as argument parser, IO and conversion utilities
+dev-libs/cpp-utilities 5.24.0: Common C++ classes and routines such as argument parser, IO and conversion utilities
 dev-libs/qtforkawesome 0.1.0: Library that bundles ForkAwesome for use within Qt applications
-dev-libs/qtutilities 6.12.2: Common Qt related C++ classes and routines used by my applications such as dialogs, widgets and models
+dev-libs/qtutilities 6.13.0: Common Qt related C++ classes and routines used by my applications such as dialogs, widgets and models
 dev-python/fastapi 0.99.1: High performance, easy to learn, fast to code, ready for production
 dev-python/httptools 0.5.0: Fast HTTP Parser
 dev-python/pypandoc 1.7.5 1.10 1.11: Pypandoc provides a thin wrapper for pandoc, a universal document converter
@@ -17,5 +17,5 @@ sys-power/nut-monitor 2.8.0: GUI to manage devices connected a NUT server
 x11-misc/albert 0.21.1: A fast and flexible keyboard launcher
 x11-misc/clipit 1.4.5: Lightweight GTK+ clipboard manager. Fork of Parcellite.
 x11-misc/gcolor2 0.4-r4: A GTK+ color selector
-x11-plugins/syncthingtray 1.4.3: Tray application for Syncthing
+x11-plugins/syncthingtray 1.4.4: Tray application for Syncthing
 x11-themes/qt6gtk2 0.2: GTK+2.0 integration plugins for Qt6
