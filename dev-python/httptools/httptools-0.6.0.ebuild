@@ -5,7 +5,7 @@ EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
 PYTHON_COMPAT=( python3_{10,11} )
-LLHTTP_COMMIT='3523423483a61179f47cc7ff0da012fb6f81ec1b'
+LLHTTP_COMMIT='caed04d6c1251e54c642bddfc7d0330af234f0d3'
 
 inherit distutils-r1
 
