@@ -2,3 +2,6 @@
 # These packages are masked until Qt6 is considered ready on Gentoo portage tree
 =x11-misc/albert-0.20.14
 x11-themes/qt6gtk2
+
+# build is actually broken and net-misc/etebase-server requires v0.5.0 upstream
+=dev-python/httptools-0.6.0
