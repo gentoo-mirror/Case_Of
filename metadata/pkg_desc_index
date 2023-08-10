@@ -16,5 +16,5 @@ sys-apps/gprename 20160905: GPRename is a complete batch renamer for files and d
 sys-power/nut-monitor 2.8.0: GUI to manage devices connected a NUT server
 x11-misc/clipit 1.4.5: Lightweight GTK+ clipboard manager. Fork of Parcellite.
 x11-misc/gcolor2 0.4-r4: A GTK+ color selector
-x11-plugins/syncthingtray 1.4.4: Tray application for Syncthing
+x11-plugins/syncthingtray 1.4.5: Tray application for Syncthing
 x11-themes/qt6gtk2 0.2: GTK+2.0 integration plugins for Qt6
