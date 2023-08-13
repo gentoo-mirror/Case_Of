@@ -10,8 +10,8 @@ inherit cmake python-single-r1 xdg-utils
 DESCRIPTION="A fast and flexible keyboard launcher"
 HOMEPAGE="https://albertlauncher.github.io/"
 
-PLUGINS_HASH="41bd173e688f8be6d6aab2f8574fab975dcb04b8"
-PYTHON_EXTENSIONS_COMMIT="874af6469607b5cafd45e424d2e27d0efd66231b"
+PLUGINS_HASH="5050da507c4e253f3a2e6567ed308c4ff192f207"
+PYTHON_EXTENSIONS_COMMIT="c3b4b33344f71f39cede92eee9a886701ddc2abb"
 
 SRC_URI="
 	https://github.com/albertlauncher/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz
@@ -33,6 +33,7 @@ RDEPEND="
 	app-arch/libarchive:=
 	dev-cpp/muParser
 	dev-libs/qhotkey[qt6]
+	dev-qt/qt5compat:6
 	dev-qt/qtbase:6[concurrent,dbus,gui,network,sql,sqlite,widgets]
 	dev-qt/qtscxml:6
 	dev-qt/qtsvg:6
