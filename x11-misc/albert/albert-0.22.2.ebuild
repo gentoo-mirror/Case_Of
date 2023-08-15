@@ -10,8 +10,8 @@ inherit cmake python-single-r1 xdg-utils
 DESCRIPTION="A fast and flexible keyboard launcher"
 HOMEPAGE="https://albertlauncher.github.io/"
 
-PLUGINS_HASH="5050da507c4e253f3a2e6567ed308c4ff192f207"
-PYTHON_EXTENSIONS_COMMIT="c3b4b33344f71f39cede92eee9a886701ddc2abb"
+PLUGINS_HASH="4f2691cb977ab1d0286f0e076278d907d3a1469c"
+PYTHON_EXTENSIONS_COMMIT="61a4a678d8f1c32404e6ae0c2d6096ee383a5908"
 
 SRC_URI="
 	https://github.com/albertlauncher/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz
