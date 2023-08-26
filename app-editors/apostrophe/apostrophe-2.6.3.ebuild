@@ -28,7 +28,7 @@ RDEPEND="
 	dev-python/Levenshtein[${PYTHON_USEDEP}]
 	gnome-base/gsettings-desktop-schemas
 	>=gui-libs/libhandy-1.6.1:1[introspection]
-	net-libs/webkit-gtk[introspection]
+	net-libs/webkit-gtk:4[introspection]
 	x11-libs/gdk-pixbuf[introspection]
 	x11-libs/gtk+:3[introspection]
 	x11-libs/pango[introspection]
