@@ -10,8 +10,8 @@ inherit cmake python-single-r1 xdg-utils
 DESCRIPTION="A fast and flexible keyboard launcher"
 HOMEPAGE="https://albertlauncher.github.io/"
 
-PLUGINS_HASH="24f77f9426ca1890ba1d5a89b9b84af99d7e35b6"
-PYTHON_EXTENSIONS_COMMIT="61a4a678d8f1c32404e6ae0c2d6096ee383a5908"
+PLUGINS_HASH="f33ed1b7cb8879bf2f49f27cfb2860f0d558d4c8"
+PYTHON_EXTENSIONS_COMMIT="d3873a2cafa1fa8093c249a1264e98936f7fe39d"
 
 SRC_URI="
 	https://github.com/albertlauncher/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz
@@ -47,7 +47,7 @@ DEPEND="${RDEPEND}
 	x11-base/xorg-proto
 	python? ( $(python_gen_cond_dep 'dev-python/pybind11[${PYTHON_USEDEP}]') )"
 
-PATCHES=("${FILESDIR}/${PN}-0.20.13-use-system-qhotkey-libraries-and-headers.patch")
+PATCHES=("${FILESDIR}/${PN}-0.22.4-use-system-qhotkey-libraries-and-headers.patch")
 
 src_prepare() {
 	mv "${WORKDIR}"/plugins-${PLUGINS_HASH}/* "${S}"/plugins || die
