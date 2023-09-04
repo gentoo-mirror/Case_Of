@@ -47,7 +47,7 @@ DEPEND="${RDEPEND}
 	x11-base/xorg-proto
 	python? ( $(python_gen_cond_dep 'dev-python/pybind11[${PYTHON_USEDEP}]') )"
 
-PATCHES=("${FILESDIR}/${PN}-0.20.13-use-system-qhotkey-libraries-and-headers.patch")
+PATCHES=("${FILESDIR}/${PN}-0.22.4-use-system-qhotkey-libraries-and-headers.patch")
 
 src_prepare() {
 	mv "${WORKDIR}"/plugins-${PLUGINS_HASH}/* "${S}"/plugins || die
