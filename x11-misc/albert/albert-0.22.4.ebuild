@@ -44,8 +44,9 @@ RDEPEND="
 	)
 "
 DEPEND="${RDEPEND}
-	x11-base/xorg-proto
-	python? ( $(python_gen_cond_dep 'dev-python/pybind11[${PYTHON_USEDEP}]') )"
+	dev-qt/qtdeclarative:6
+	python? ( $(python_gen_cond_dep 'dev-python/pybind11[${PYTHON_USEDEP}]') )
+	x11-base/xorg-proto"
 
 PATCHES=("${FILESDIR}/${PN}-0.22.4-use-system-qhotkey-libraries-and-headers.patch")
 
