@@ -33,9 +33,9 @@ RDEPEND="
 	app-arch/libarchive:=
 	dev-cpp/muParser
 	dev-libs/qhotkey[qt6]
-	dev-qt/qt5compat:6
+	dev-qt/qt5compat:6[qml]
 	dev-qt/qtbase:6[concurrent,dbus,gui,network,sql,sqlite,widgets]
-	dev-qt/qtscxml:6
+	dev-qt/qtscxml:6[qml]
 	dev-qt/qtsvg:6
 	sci-libs/libqalculate:=
 	python? (
