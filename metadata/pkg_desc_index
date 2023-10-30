@@ -3,7 +3,7 @@ app-office/grammalecte 2.1.2: French grammar checker extension for LibreOffice.
 dev-libs/cpp-utilities 5.24.1: Common C++ classes and routines such as argument parser, IO and conversion utilities
 dev-libs/qtforkawesome 0.1.0: Library that bundles ForkAwesome for use within Qt applications
 dev-libs/qtutilities 6.13.1: Common Qt related C++ classes and routines used by my applications such as dialogs, widgets and models
-dev-python/fastapi 0.104.0: High performance, easy to learn, fast to code, ready for production
+dev-python/fastapi 0.104.1: High performance, easy to learn, fast to code, ready for production
 dev-python/httptools 0.5.0 0.6.0 0.6.1: Fast HTTP Parser
 dev-python/pypandoc 1.7.5 1.10 1.11 1.12: Pypandoc provides a thin wrapper for pandoc, a universal document converter
 games-strategy/hedgewars 9999: A turn-based strategy, artillery, action and comedy game
