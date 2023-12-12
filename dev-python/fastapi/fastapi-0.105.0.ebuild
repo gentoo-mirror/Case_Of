@@ -20,6 +20,8 @@ RESTRICT="test"
 
 BDEPEND=">=dev-python/hatchling-1.13.0[${PYTHON_USEDEP}]"
 RDEPEND="
+	>=dev-python/anyio-3.7.1[${PYTHON_USEDEP}]
 	>=dev-python/pydantic-1.7.4[${PYTHON_USEDEP}]
 	>=dev-python/starlette-0.27.0[${PYTHON_USEDEP}]
+	>=dev-python/typing-extensions-4.8.0[${PYTHON_USEDEP}]
 "
