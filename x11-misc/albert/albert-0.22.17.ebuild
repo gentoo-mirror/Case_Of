@@ -1,11 +1,11 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 PYTHON_COMPAT=( python3_{10,11,12} )
 
-inherit cmake python-single-r1 xdg-utils
+inherit cmake python-single-r1 xdg
 
 DESCRIPTION="A fast and flexible keyboard launcher"
 HOMEPAGE="https://albertlauncher.github.io/"
@@ -29,12 +29,14 @@ REQUIRED_USE="
 	python? ( ${PYTHON_REQUIRED_USE} )
 "
 
+RESTRICT="mirror bindist"
+
 RDEPEND="
 	app-arch/libarchive:=
-	dev-cpp/muParser
 	dev-libs/qhotkey[qt6]
 	dev-qt/qt5compat:6[qml]
 	dev-qt/qtbase:6[concurrent,dbus,gui,network,sql,sqlite,widgets]
+	dev-qt/qtdeclarative:6
 	dev-qt/qtscxml:6[qml]
 	dev-qt/qtsvg:6
 	sci-libs/libqalculate:=
@@ -44,7 +46,6 @@ RDEPEND="
 	)
 "
 DEPEND="${RDEPEND}
-	dev-qt/qtdeclarative:6
 	python? ( $(python_gen_cond_dep 'dev-python/pybind11[${PYTHON_USEDEP}]') )
 	x11-base/xorg-proto"
 
@@ -53,7 +54,7 @@ PATCHES=("${FILESDIR}/${PN}-0.22.4-use-system-qhotkey-libraries-and-headers.patc
 src_prepare() {
 	mv "${WORKDIR}"/plugins-${PLUGINS_HASH}/* "${S}"/plugins || die
 	if use python-extensions; then
-		mv "${WORKDIR}"/python-${PYTHON_EXTENSIONS_COMMIT}/* "${S}"/plugins/python/plugins
+		mv "${WORKDIR}"/python-${PYTHON_EXTENSIONS_COMMIT}/* "${S}"/plugins/python/plugins || die
 	fi
 
 	cmake_src_prepare
@@ -66,13 +67,4 @@ src_configure() {
 	)
 
 	cmake_src_configure
-}
-
-pkg_postinst() {
-	xdg_desktop_database_update
-	xdg_icon_cache_update
-}
-
-pkg_postrm() {
-	xdg_desktop_database_update
 }
