@@ -37,6 +37,7 @@ CRATES="
 	etebase@0.6.0
 	fastrand@2.0.1
 	fixedbitset@0.2.0
+	flapigen@0.6.0
 	fnv@1.0.7
 	foreign-types@0.3.2
 	foreign-types-shared@0.1.1
