@@ -224,7 +224,7 @@ BDEPEND="
 	dev-python/setuptools-rust[${PYTHON_USEDEP}]
 "
 
-PATCHES=( "$FILESDIR"/${P}-flapigen.patch )
+PATCHES=( "$FILESDIR"/${PN}-0.31.6-flapigen.patch )
 
 src_unpack() {
 	cargo_src_unpack
