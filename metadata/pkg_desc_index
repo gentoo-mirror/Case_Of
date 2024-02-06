@@ -1,5 +1,5 @@
 app-editors/apostrophe 2.6.3: A distraction free Markdown editor for GNU/Linux made with GTK+
-app-misc/errands 45.1.6 45.1.7: Todo application for those who prefer simplicity
+app-misc/errands 45.1.6 45.1.7 45.1.8: Todo application for those who prefer simplicity
 app-office/grammalecte 2.1.2: French grammar checker extension for LibreOffice.
 dev-libs/cpp-utilities 5.24.5: Common C++ classes and routines such as argument parser, IO and conversion utilities
 dev-libs/qtforkawesome 0.1.0: Library that bundles ForkAwesome for use within Qt applications
