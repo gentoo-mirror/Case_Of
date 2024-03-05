@@ -5,4 +5,7 @@
 		<email>gentoo@retornaz.com</email>
 		<name>Quentin Retornaz</name>
 	</maintainer>
+	<upstream>
+		<remote-id type="github">Martchus/cpp-utilities</remote-id>
+	</upstream>
 </pkgmetadata>
