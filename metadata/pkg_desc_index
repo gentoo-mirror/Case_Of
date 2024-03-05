@@ -1,9 +1,9 @@
 app-editors/apostrophe 2.6.3: A distraction free Markdown editor for GNU/Linux made with GTK+
 app-misc/errands 45.1.6 45.1.7 45.1.8 45.1.9: Todo application for those who prefer simplicity
 app-office/grammalecte 2.1.2: French grammar checker extension for LibreOffice.
-dev-libs/cpp-utilities 5.24.6: Common C++ classes and routines such as argument parser, IO and conversion utilities
-dev-libs/qtforkawesome 0.1.0: Library that bundles ForkAwesome for use within Qt applications
-dev-libs/qtutilities 6.13.4: Common Qt related C++ classes and routines used by my applications such as dialogs, widgets and models
+dev-libs/cpp-utilities 5.24.7: Common C++ classes and routines such as argument parser, IO and conversion utilities
+dev-libs/qtforkawesome 0.2.0: Library that bundles ForkAwesome for use within Qt applications
+dev-libs/qtutilities 6.13.5: Common Qt related C++ classes and routines used by my applications such as dialogs, widgets and models
 dev-python/etebase-py 0.31.6 0.31.7: Etebase Python library
 dev-python/etesync 0.12.1: Python API to interact with an EteSync server
 dev-python/fastapi 0.110.0: High performance, easy to learn, fast to code, ready for production
@@ -24,5 +24,5 @@ www-apps/etesync-dav 0.32.1: A CalDAV and CardDAV adapter for EteSync
 x11-misc/albert 0.22.17 0.23.0: A fast and flexible keyboard launcher
 x11-misc/clipit 1.4.5: Lightweight GTK+ clipboard manager. Fork of Parcellite.
 x11-misc/gcolor2 0.4-r4: A GTK+ color selector
-x11-plugins/syncthingtray 1.4.13: Tray application for Syncthing
+x11-plugins/syncthingtray 1.5.0: Tray application for Syncthing
 x11-themes/qt6gtk2 0.2: GTK+2.0 integration plugins for Qt6
