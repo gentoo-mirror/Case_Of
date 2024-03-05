@@ -5,6 +5,9 @@
 		<email>gentoo@retornaz.com</email>
 		<name>Quentin Retornaz</name>
 	</maintainer>
+	<upstream>
+		<remote-id type="github">Martchus/syncthingtray</remote-id>
+	</upstream>
 	<use>
 		<flag name="qml">Use QML as Javascript provider</flag>
 		<flag name="script">Use dev-qt/qtscript as Javascript provider</flag>
