@@ -19,6 +19,7 @@ RDEPEND="
 	app-crypt/libsecret
 	dev-python/caldav
 	dev-python/icalendar
+	dev-python/pycryptodomex
 	dev-python/pygobject
 	gui-libs/gtksourceview:5
 	gui-libs/libadwaita
