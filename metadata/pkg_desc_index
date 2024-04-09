@@ -25,5 +25,5 @@ www-apps/etesync-dav 0.32.1: A CalDAV and CardDAV adapter for EteSync
 x11-misc/albert 0.22.17 0.23.0: A fast and flexible keyboard launcher
 x11-misc/clipit 1.4.5: Lightweight GTK+ clipboard manager. Fork of Parcellite.
 x11-misc/gcolor2 0.4-r4: A GTK+ color selector
-x11-plugins/syncthingtray 1.5.1: Tray application for Syncthing
+x11-plugins/syncthingtray 1.5.2: Tray application for Syncthing
 x11-themes/qt6gtk2 0.2: GTK+2.0 integration plugins for Qt6
