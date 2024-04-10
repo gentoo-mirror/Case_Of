@@ -23,8 +23,8 @@ REQUIRED_USE="
 RDEPEND="
 	dev-libs/openssl:=
 	dev-libs/boost:=
-	dev-libs/qtforkawesome:=
-	dev-libs/qtutilities:=
+	dev-libs/qtforkawesome:=[qt6=]
+	dev-libs/qtutilities:=[qt6=]
 	!qt6? (
 		dev-qt/qtconcurrent:5
 		dev-qt/qtcore:5
