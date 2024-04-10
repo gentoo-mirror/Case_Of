@@ -1,18 +1,18 @@
 BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.20.5
 DEFINED_PHASES=compile configure install prepare test
-DEPEND=dev-libs/openssl:= dev-qt/qtconcurrent:5 dev-qt/qtcore:5 dev-qt/qtnetwork:5 dev-qt/qtsvg:5 dev-libs/boost:= dev-libs/qtforkawesome:= dev-libs/qtutilities:= kde? ( kde-frameworks/kio:5 kde-plasma/libplasma:5 ) qml? ( dev-qt/qtdeclarative:5 ) script? ( dev-qt/qtscript:5 ) systemd? ( dev-qt/qtdbus:5 ) webengine? ( dev-qt/qtwebengine:5 ) kde? ( kde-frameworks/extra-cmake-modules )
+DEPEND=dev-libs/openssl:= dev-libs/boost:= dev-libs/qtforkawesome:= dev-libs/qtutilities:= !qt6? ( dev-qt/qtconcurrent:5 dev-qt/qtcore:5 dev-qt/qtnetwork:5 dev-qt/qtsvg:5 kde? ( kde-frameworks/kio:5 kde-plasma/libplasma:5 ) qml? ( dev-qt/qtdeclarative:5 ) script? ( dev-qt/qtscript:5 ) systemd? ( dev-qt/qtdbus:5 ) webengine? ( dev-qt/qtwebengine:5 ) ) qt6? ( dev-qt/qtbase:6[gui,network,widgets] dev-qt/qtsvg:6 kde? ( kde-frameworks/kio:6 kde-plasma/libplasma:6 ) qml? ( dev-qt/qtdeclarative:6 ) systemd? ( dev-qt/qtbase:6[dbus] ) webengine? ( dev-qt/qtwebengine:6 ) ) kde? ( !qt6? ( =kde-frameworks/extra-cmake-modules-5* ) qt6? ( =kde-frameworks/extra-cmake-modules-6* ) ) qt6? ( dev-qt/qttools:6 )
 DESCRIPTION=Tray application for Syncthing
 EAPI=8
 HOMEPAGE=https://github.com/Martchus/syncthingtray
 IDEPEND=dev-util/desktop-file-utils
 INHERIT=cmake
-IUSE=kde qml script static-libs systemd webengine
+IUSE=kde qml qt6 script static-libs systemd webengine
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2+
-RDEPEND=dev-libs/openssl:= dev-qt/qtconcurrent:5 dev-qt/qtcore:5 dev-qt/qtnetwork:5 dev-qt/qtsvg:5 dev-libs/boost:= dev-libs/qtforkawesome:= dev-libs/qtutilities:= kde? ( kde-frameworks/kio:5 kde-plasma/libplasma:5 ) qml? ( dev-qt/qtdeclarative:5 ) script? ( dev-qt/qtscript:5 ) systemd? ( dev-qt/qtdbus:5 ) webengine? ( dev-qt/qtwebengine:5 )
-REQUIRED_USE=qml? ( !script ) script? ( !qml )
+RDEPEND=dev-libs/openssl:= dev-libs/boost:= dev-libs/qtforkawesome:= dev-libs/qtutilities:= !qt6? ( dev-qt/qtconcurrent:5 dev-qt/qtcore:5 dev-qt/qtnetwork:5 dev-qt/qtsvg:5 kde? ( kde-frameworks/kio:5 kde-plasma/libplasma:5 ) qml? ( dev-qt/qtdeclarative:5 ) script? ( dev-qt/qtscript:5 ) systemd? ( dev-qt/qtdbus:5 ) webengine? ( dev-qt/qtwebengine:5 ) ) qt6? ( dev-qt/qtbase:6[gui,network,widgets] dev-qt/qtsvg:6 kde? ( kde-frameworks/kio:6 kde-plasma/libplasma:6 ) qml? ( dev-qt/qtdeclarative:6 ) systemd? ( dev-qt/qtbase:6[dbus] ) webengine? ( dev-qt/qtwebengine:6 ) )
+REQUIRED_USE=qml? ( !script ) script? ( !qml ) qt6? ( !script )
 RESTRICT=mirror test
 SLOT=0
 SRC_URI=https://github.com/Martchus/syncthingtray/archive/v1.5.2.tar.gz -> syncthingtray-1.5.2.tar.gz
 _eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	288c54efeb5e2aa70775e39032695ad4	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	c7c9a62d6232cac66d4ea32d575c3e7c
-_md5_=41561a822f8cc68c30e8556541c168a5
+_md5_=4680d20bbd2811ce2dc9231aee7bde6b
