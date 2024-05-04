@@ -1,12 +1,12 @@
 app-editors/apostrophe 2.6.3: A distraction free Markdown editor for GNU/Linux made with GTK+
-app-misc/errands 45.1.6 45.1.7 45.1.8 45.1.9 46.0: Todo application for those who prefer simplicity
+app-misc/errands 45.1.9 46.0 46.0.1 46.0.2: Todo application for those who prefer simplicity
 app-office/grammalecte 2.1.2: French grammar checker extension for LibreOffice.
 dev-libs/cpp-utilities 5.24.7: Common C++ classes and routines such as argument parser, IO and conversion utilities
 dev-libs/qtforkawesome 0.2.0: Library that bundles ForkAwesome for use within Qt applications
 dev-libs/qtutilities 6.14.0: Common Qt related C++ classes and routines used by my applications such as dialogs, widgets and models
 dev-python/etebase-py 0.31.6 0.31.7: Etebase Python library
 dev-python/etesync 0.12.1: Python API to interact with an EteSync server
-dev-python/fastapi 0.110.3: High performance, easy to learn, fast to code, ready for production
+dev-python/fastapi 0.111.0: High performance, easy to learn, fast to code, ready for production
 dev-python/flask-wtf 1.2.1: Simple integration of Flask and WTForms
 dev-python/furl 2.1.3: URL parsing and manipulation made easy.
 dev-python/httptools 0.5.0 0.6.0 0.6.1: Fast HTTP Parser
