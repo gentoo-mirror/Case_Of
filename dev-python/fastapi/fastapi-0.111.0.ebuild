@@ -3,8 +3,8 @@
 
 EAPI=8
 
-DISTUTILS_USE_PEP517=hatchling
-PYTHON_COMPAT=( python3_{8..12} )
+DISTUTILS_USE_PEP517=pdm-backend
+PYTHON_COMPAT=( python3_{11..12} )
 
 inherit distutils-r1
 
