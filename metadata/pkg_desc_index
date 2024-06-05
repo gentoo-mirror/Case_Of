@@ -15,7 +15,7 @@ dev-python/pypandoc 1.12 1.13: Pypandoc provides a thin wrapper for pandoc, a un
 gnome-extra/evolution-etesync 1.0.0 1.1.0 1.1.1: EteSync plugin for Evolution
 gui-apps/gcolor3 2.4.0: A simple color chooser written in GTK3
 net-libs/libetebase 0.5.0 0.5.2 0.5.3 0.5.4 0.5.5 0.5.6: C library for etebase
-net-misc/etebase-server 0.11.0: The Etebase server
+net-misc/etebase-server 0.13.1: The Etebase server
 net-misc/subnetcalc 2.4.23 2.5.1: IP address calculator
 sys-apps/gprename 20160905: GPRename is a complete batch renamer for files and directories
 sys-power/nut-monitor 2.8.0: GUI to manage devices connected a NUT server
