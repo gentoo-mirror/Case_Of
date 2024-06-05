@@ -1,7 +1,7 @@
 # Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 PYTHON_COMPAT=( python3_{10,11} )
 
@@ -9,7 +9,7 @@ inherit python-single-r1 systemd wrapper
 
 DESCRIPTION="The Etebase server"
 HOMEPAGE="https://www.etesync.com https://github.com/etesync/server"
-SRC_URI="https://github.com/etesync/server/archive/${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/etesync/server/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="AGPL-3"
 SLOT="0"
@@ -22,8 +22,8 @@ RDEPEND="
 	${PYTHON_DEPS}
 	$(python_gen_cond_dep '
 		>=dev-python/aiofiles-22.1.0[${PYTHON_USEDEP}]
-		>=dev-python/django-3.2.16[${PYTHON_USEDEP},sqlite]
-		<dev-python/django-4.0.0[${PYTHON_USEDEP},sqlite]
+		>=dev-python/django-4.0.0[${PYTHON_USEDEP},sqlite]
+		<dev-python/django-5.0.0[${PYTHON_USEDEP},sqlite]
 		>=dev-python/fastapi-0.88.0[${PYTHON_USEDEP}]
 		>=dev-python/httptools-0.5.0[${PYTHON_USEDEP}]
 		>=dev-python/msgpack-1.0.4[${PYTHON_USEDEP}]
