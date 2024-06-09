@@ -1,0 +1,15 @@
+BDEPEND=virtual/pkgconfig
+DEFINED_PHASES=install prepare setup
+DESCRIPTION=The Etebase server
+EAPI=8
+HOMEPAGE=https://www.etesync.com https://github.com/etesync/server
+INHERIT=python-single-r1 systemd wrapper
+IUSE=python_single_target_python3_10 python_single_target_python3_12
+KEYWORDS=~amd64
+LICENSE=AGPL-3
+RDEPEND=python_single_target_python3_10? ( dev-lang/python:3.10 ) python_single_target_python3_12? ( dev-lang/python:3.12 ) python_single_target_python3_10? ( >=dev-python/aiofiles-23.2.1[python_targets_python3_10(-)] >=dev-python/django-4.0.0[python_targets_python3_10(-),sqlite] <dev-python/django-5.0.0[python_targets_python3_10(-),sqlite] >=dev-python/fastapi-0.104.0[python_targets_python3_10(-)] >=dev-python/httptools-0.6.1[python_targets_python3_10(-)] >=dev-python/msgpack-1.0.8[python_targets_python3_10(-)] >=dev-python/pydantic-2.0.0[python_targets_python3_10(-)] >=dev-python/pynacl-1.5.0[python_targets_python3_10(-)] >=dev-python/python-dotenv-1.0.1[python_targets_python3_10(-)] >=dev-python/pytz-2022.6[python_targets_python3_10(-)] >=dev-python/pyyaml-6.0[python_targets_python3_10(-)] >=dev-python/redis-4.4.0[python_targets_python3_10(-)] >=dev-python/typing-extensions-4.12.2[python_targets_python3_10(-)] >=dev-python/uvicorn-0.30.1[python_targets_python3_10(-)] >=dev-python/uvloop-0.19.0[python_targets_python3_10(-)] >=dev-python/websockets-10.4[python_targets_python3_10(-)] ) python_single_target_python3_12? ( >=dev-python/aiofiles-23.2.1[python_targets_python3_12(-)] >=dev-python/django-4.0.0[python_targets_python3_12(-),sqlite] <dev-python/django-5.0.0[python_targets_python3_12(-),sqlite] >=dev-python/fastapi-0.104.0[python_targets_python3_12(-)] >=dev-python/httptools-0.6.1[python_targets_python3_12(-)] >=dev-python/msgpack-1.0.8[python_targets_python3_12(-)] >=dev-python/pydantic-2.0.0[python_targets_python3_12(-)] >=dev-python/pynacl-1.5.0[python_targets_python3_12(-)] >=dev-python/python-dotenv-1.0.1[python_targets_python3_12(-)] >=dev-python/pytz-2022.6[python_targets_python3_12(-)] >=dev-python/pyyaml-6.0[python_targets_python3_12(-)] >=dev-python/redis-4.4.0[python_targets_python3_12(-)] >=dev-python/typing-extensions-4.12.2[python_targets_python3_12(-)] >=dev-python/uvicorn-0.30.1[python_targets_python3_12(-)] >=dev-python/uvloop-0.19.0[python_targets_python3_12(-)] >=dev-python/websockets-10.4[python_targets_python3_12(-)] )
+REQUIRED_USE=^^ ( python_single_target_python3_10 python_single_target_python3_12 )
+SLOT=0
+SRC_URI=https://github.com/etesync/server/archive/v0.14.0.tar.gz -> etebase-server-0.14.0.tar.gz
+_eclasses_=multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	8b220bbce5c119fb1d4d5c2f5588f3ea	python-single-r1	75118e916668a74c660a13b0ecb22562	systemd	c8b03e8df84486aa991d4396686e8942	wrapper	4a1902f969e5718126434fc35f3a0d9c
+_md5_=be40e0315444253b3c36a5a85d77c6e0
