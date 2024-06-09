@@ -1,2 +1,0 @@
-# build is actually broken and net-misc/etebase-server requires v0.5.0 upstream
->=dev-python/httptools-0.6.0
