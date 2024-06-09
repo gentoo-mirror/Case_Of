@@ -5,7 +5,7 @@ EAPI=8
 
 # Legacy mode: DISTUTILS_USE_PEP517 should not be set.
 DISTUTILS_EXT=1
-PYTHON_COMPAT=( python3_{8,12} )
+PYTHON_COMPAT=( python3_{8..12} )
 LLHTTP_COMMIT='caed04d6c1251e54c642bddfc7d0330af234f0d3'
 
 inherit distutils-r1
