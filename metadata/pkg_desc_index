@@ -22,7 +22,7 @@ net-misc/subnetcalc 2.4.23 2.5.1: IP address calculator
 sys-apps/gprename 20160905: GPRename is a complete batch renamer for files and directories
 sys-power/nut-monitor 2.8.0: GUI to manage devices connected a NUT server
 www-apps/etesync-dav 0.32.1: A CalDAV and CardDAV adapter for EteSync
-x11-misc/albert 0.22.17 0.23.0 0.24.1: A fast and flexible keyboard launcher
+x11-misc/albert 0.22.17 0.23.0 0.24.2: A fast and flexible keyboard launcher
 x11-misc/clipit 1.4.5: Lightweight GTK+ clipboard manager. Fork of Parcellite.
 x11-misc/gcolor2 0.4-r4: A GTK+ color selector
 x11-plugins/syncthingtray 1.5.4: Tray application for Syncthing
