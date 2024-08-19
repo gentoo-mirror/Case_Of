@@ -1,0 +1,3 @@
+# unable to find terminal in system
+# unable to load some C++ plugins
+=x11-misc/albert-0.26.0
