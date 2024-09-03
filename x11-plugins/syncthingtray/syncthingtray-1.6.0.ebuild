@@ -15,9 +15,10 @@ KEYWORDS="~amd64 ~x86"
 IUSE="kde qml qt6 script static-libs systemd webengine"
 
 REQUIRED_USE="
+	kde? ( qt6 )
 	qml? ( !script )
-	script? ( !qml )
 	qt6? ( !script )
+	script? ( !qml )
 "
 
 RDEPEND="
@@ -30,10 +31,6 @@ RDEPEND="
 		dev-qt/qtcore:5
 		dev-qt/qtnetwork:5
 		dev-qt/qtsvg:5
-		kde? (
-			kde-frameworks/kio:5
-			kde-plasma/libplasma:5
-		)
 		qml? ( dev-qt/qtdeclarative:5 )
 		script? ( dev-qt/qtscript:5 )
 		systemd? ( dev-qt/qtdbus:5 )
@@ -56,8 +53,7 @@ IDEPEND="
 "
 DEPEND="${RDEPEND}
 	kde? (
-		!qt6? ( =kde-frameworks/extra-cmake-modules-5* )
-		qt6? ( =kde-frameworks/extra-cmake-modules-6* )
+		kde-frameworks/extra-cmake-modules
 	)
 	qt6? ( dev-qt/qttools:6 )
 "
