@@ -1,0 +1,34 @@
+From a1864669e0565cf435e627f8d021911cc9d27d89 Mon Sep 17 00:00:00 2001
+From: ghpzin <ghpzin@gmail.com>
+Date: Sat, 31 Aug 2024 18:50:43 +0300
+Subject: [PATCH] Support radicale 3.2.2
+
+- add changes to log.set_level() from upstream radicale update
+(additional second arg - backtrace_on_debug):
+https://www.github.com/Kozea/Radicale/pull/1519
+---
+ etesync_dav/radicale_main/__init__.py | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/etesync_dav/radicale_main/__init__.py b/etesync_dav/radicale_main/__init__.py
+index 95a20816..3f9d9540 100644
+--- a/etesync_dav/radicale_main/__init__.py
++++ b/etesync_dav/radicale_main/__init__.py
+@@ -107,7 +107,7 @@ def run(passed_args=None):
+         args.logging_level = "debug"
+     with contextlib.suppress(ValueError):
+         log.set_level(config.DEFAULT_CONFIG_SCHEMA["logging"]["level"]["type"](
+-            args.logging_level))
++            args.logging_level), True)
+ 
+     # Update Radicale configuration according to arguments
+     arguments_config = {}
+@@ -133,7 +133,7 @@ def run(passed_args=None):
+         sys.exit(1)
+ 
+     # Configure logging
+-    log.set_level(configuration.get("logging", "level"))
++    log.set_level(configuration.get("logging", "level"), configuration.get("logging", "backtrace_on_debug"))
+ 
+     # Log configuration after logger is configured
+     for source, miss in configuration.sources():

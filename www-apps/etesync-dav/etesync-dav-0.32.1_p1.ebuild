@@ -10,7 +10,7 @@ inherit distutils-r1
 
 DESCRIPTION="A CalDAV and CardDAV adapter for EteSync"
 HOMEPAGE="https://www.etesync.com https://github.com/etesync/etesync-dav"
-SRC_URI="https://github.com/etesync/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/etesync/${PN}/archive/v${PV}.tar.gz -> ${P%_*}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
@@ -24,8 +24,10 @@ RDEPEND="
 	dev-python/flask-wtf[${PYTHON_USEDEP}]
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	>=www-apps/radicale-3.0.0[${PYTHON_USEDEP}]
-	<www-apps/radicale-3.2.0[${PYTHON_USEDEP}]
 "
 BDEPEND="dev-python/wheel[${PYTHON_USEDEP}]"
 
-PATCHES=( "$FILESDIR"/${P}-add-missing-comma-in-setup.py.patch )
+PATCHES=(
+	"$FILESDIR"/${P}-add-missing-comma-in-setup.py.patch
+	"$FILESDIR"/${P}-radicale-3.2.2.patch
+)
