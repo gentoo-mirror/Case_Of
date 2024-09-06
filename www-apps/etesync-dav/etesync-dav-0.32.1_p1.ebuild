@@ -33,3 +33,15 @@ PATCHES=(
 )
 
 S="${WORKDIR}/${P%_*}"
+
+pkg_postinst() {
+	if has_version "=www-apps/radicale-3.2.2"; then
+		ewarn "www-apps/radicale-3.2.2 is known to not work with Etesync DAV bridge."
+		ewarn "To make it work, please apply the upstream following patch to Radicale:"
+		ewarn "    https://github.com/Kozea/Radicale/commit/3094bc393602c056f659e04e642addebb5ff95b4.patch"
+		ewarn "To do this, you can just copy the patch to the following path:"
+		ewarn "    /etc/portage/patches/www-apps/radicale-3.2.2/radicale-3.2.2-fix-version-for-release.patch"
+		ewarn "and then rebuild Radicale:"
+		ewarn "    emerge --oneshot www-apps/radicale"
+	fi
+}
