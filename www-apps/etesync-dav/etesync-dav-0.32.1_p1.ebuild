@@ -28,6 +28,8 @@ RDEPEND="
 BDEPEND="dev-python/wheel[${PYTHON_USEDEP}]"
 
 PATCHES=(
-	"$FILESDIR"/${P}-add-missing-comma-in-setup.py.patch
-	"$FILESDIR"/${P}-radicale-3.2.2.patch
+	"$FILESDIR"/${P%_*}-add-missing-comma-in-setup.py.patch
+	"$FILESDIR"/${P%_*}-radicale-3.2.2.patch
 )
+
+S="${WORKDIR}/${P%_*}"
