@@ -6,7 +6,7 @@ dev-libs/qtutilities 6.14.3: Common Qt related C++ classes and routines used by 
 dev-python/cython 0.29.37.1-r1: A Python to C compiler
 dev-python/etebase-py 0.31.6 0.31.7: Etebase Python library
 dev-python/etesync 0.12.1: Python API to interact with an EteSync server
-dev-python/fastapi 0.112.2: High performance, easy to learn, fast to code, ready for production
+dev-python/fastapi 0.114.0: High performance, easy to learn, fast to code, ready for production
 dev-python/flask-wtf 1.2.1: Simple integration of Flask and WTForms
 dev-python/furl 2.1.3: URL parsing and manipulation made easy.
 dev-python/httptools 0.6.1: Fast HTTP Parser
@@ -25,5 +25,5 @@ www-apps/etesync-dav 0.32.1_p1: A CalDAV and CardDAV adapter for EteSync
 x11-misc/albert 0.22.17 0.23.0 0.24.3 0.25.0 0.26.0: A fast and flexible keyboard launcher
 x11-misc/clipit 1.4.5: Lightweight GTK+ clipboard manager. Fork of Parcellite.
 x11-misc/gcolor2 0.4-r4: A GTK+ color selector
-x11-plugins/syncthingtray 1.6.1: Tray application for Syncthing
+x11-plugins/syncthingtray 1.6.2: Tray application for Syncthing
 x11-themes/qt6gtk2 0.2: GTK+2.0 integration plugins for Qt6
