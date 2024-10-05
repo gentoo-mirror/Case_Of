@@ -10,7 +10,7 @@ inherit distutils-r1
 
 DESCRIPTION="A CalDAV and CardDAV adapter for EteSync"
 HOMEPAGE="https://www.etesync.com https://github.com/etesync/etesync-dav"
-SRC_URI="https://github.com/etesync/${PN}/archive/v${PV}.tar.gz -> ${P%_*}.tar.gz"
+SRC_URI="https://github.com/etesync/${PN}/archive/v${PV%_*}.tar.gz -> ${P%_*}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
