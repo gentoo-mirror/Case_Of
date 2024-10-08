@@ -1,0 +1,18 @@
+BDEPEND=dev-qt/qttools:6[linguist] app-alternatives/ninja >=dev-build/cmake-3.20.5
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup test
+DEPEND=x11-base/xorg-proto
+DESCRIPTION=A fast and flexible keyboard launcher
+EAPI=8
+HOMEPAGE=https://albertlauncher.github.io/
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=cmake python-single-r1 xdg
+IUSE=debug +python +python-extensions python_single_target_python3_10 python_single_target_python3_11 python_single_target_python3_12
+KEYWORDS=~amd64
+LICENSE=all-rights-reserved
+RDEPEND=app-arch/libarchive:= dev-libs/libxml2:= dev-qt/qt5compat:6[qml] dev-qt/qtbase:6[concurrent,dbus,gui,network,sql,sqlite,widgets] dev-qt/qtdeclarative:6 dev-qt/qtscxml:6[qml] dev-qt/qtsvg:6 sci-libs/libqalculate:= python? ( python_single_target_python3_10? ( dev-python/urllib3[python_targets_python3_10(-)] ) python_single_target_python3_11? ( dev-python/urllib3[python_targets_python3_11(-)] ) python_single_target_python3_12? ( dev-python/urllib3[python_targets_python3_12(-)] ) python_single_target_python3_10? ( dev-lang/python:3.10 ) python_single_target_python3_11? ( dev-lang/python:3.11 ) python_single_target_python3_12? ( dev-lang/python:3.12 ) )
+REQUIRED_USE=python-extensions? ( python ) python? ( ^^ ( python_single_target_python3_10 python_single_target_python3_11 python_single_target_python3_12 ) )
+RESTRICT=mirror bindist
+SLOT=0
+SRC_URI=https://github.com/albertlauncher/albert/archive/v0.26.4.tar.gz -> albert-0.26.4.tar.gz https://github.com/albertlauncher/i18n/archive/ee0f6f830fcc6bdf8cf998519fe0a685611db926.tar.gz -> albert-i18n-ee0f6f830fcc6bdf8cf998519fe0a685611db926.tar.gz https://github.com/albertlauncher/plugins/archive/f9a7f8ba79ebdf9742781df8241213064db883e7.tar.gz -> albert-plugins-f9a7f8ba79ebdf9742781df8241213064db883e7.tar.gz https://codeload.github.com/QtCommunity/QNotification/tar.gz/5370789111dadf97119ef7a42d64ef9aff3d79d7 -> albert-qnotification-5370789111dadf97119ef7a42d64ef9aff3d79d7.tar.gz https://codeload.github.com/Skycoder42/QHotkey/tar.gz/34330d6ff5d2ca111c376f6d7da66be9d1817430 -> albert-qhotkey-34330d6ff5d2ca111c376f6d7da66be9d1817430.tar.gz python? ( https://codeload.github.com/pybind/pybind11/tar.gz/3e9dfa2866941655c56877882565e7577de6fc7b -> albert-pybind11-3e9dfa2866941655c56877882565e7577de6fc7b.tar.gz ) python-extensions? ( https://github.com/albertlauncher/python/archive/e4af117f9adeee0a935c663f2be082debd7e9399.tar.gz -> albert-python-extensions-e4af117f9adeee0a935c663f2be082debd7e9399.tar.gz )
+_eclasses_=toolchain-funcs	d3d42b22a610ce81c267b644bcec9b87	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	f14aba975c94ccaa9f357a27e3b17ffe	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	10a50dfaf728b802fcfd37f8d0da9056	python-utils-r1	c356a67b8e93889de6efff7d50599102	python-single-r1	47d8ac9be330c9366112b78fd4f8ce57	xdg	3ef49a87c52c8b77c476351195dfe575
+_md5_=226ea3d534f70ae2bca43a1a07e20468
