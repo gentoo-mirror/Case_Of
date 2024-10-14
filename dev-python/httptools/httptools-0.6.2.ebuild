@@ -32,8 +32,6 @@ DEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 "
 
-PATCHES="${FILESDIR}/${PN}-0.6.1-cython3.patch"
-
 src_prepare() {
 	sed -e "s:../../vendor/http-parser/http_parser.h:${EPREFIX}/usr/include/http_parser.h:" -i ${PN}/parser/cparser.pxd || die
 	cp -r "${WORKDIR}/llhttp-${LLHTTP_COMMIT}"/* "${S}"/vendor/llhttp/ || die
