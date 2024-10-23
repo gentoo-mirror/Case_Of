@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10,11,12} )
+PYTHON_COMPAT=( python3_{10..13} )
 
 inherit cmake python-single-r1 xdg
 
@@ -11,7 +11,7 @@ DESCRIPTION="A fast and flexible keyboard launcher"
 HOMEPAGE="https://albertlauncher.github.io/"
 
 I18N_COMMIT="ee0f6f830fcc6bdf8cf998519fe0a685611db926"
-PLUGINS_COMMIT="e34a0863070e51cc8d65498c0e0ffdb0e79e9251"
+PLUGINS_COMMIT="a0637e1dc6b0b5533c6bdacc0f67c21beab40d5e"
 PYTHON_EXTENSIONS_COMMIT="e4af117f9adeee0a935c663f2be082debd7e9399"
 PYBIND11_COMMIT="a2e59f0e7065404b44dfe92a28aca47ba1378dc4"
 QHOTKEY_COMMIT="34330d6ff5d2ca111c376f6d7da66be9d1817430"
