@@ -4,13 +4,13 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=hatchling
-PYTHON_COMPAT=( python3_{10..12} )
+PYTHON_COMPAT=( python3_{10..13} )
 
 inherit distutils-r1
 
 DESCRIPTION="Simple integration of Flask and WTForms"
 HOMEPAGE="https://flask-wtf.readthedocs.io/"
-SRC_URI="https://github.com/wtforms/flask-wtf/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/pallets-eco/flask-wtf/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
