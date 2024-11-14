@@ -17,7 +17,7 @@ gnome-extra/evolution-etesync 1.0.0 1.1.0 1.1.1: EteSync plugin for Evolution
 gui-apps/gcolor3 2.4.0: A simple color chooser written in GTK3
 net-libs/libetebase 0.5.2 0.5.3 0.5.4 0.5.5 0.5.6: C library for etebase
 net-misc/etebase-server 0.13.1 0.14.2: The Etebase server
-net-misc/subnetcalc 2.4.23 2.5.1: IP address calculator
+net-misc/subnetcalc 2.4.23 2.5.1 2.6.0: IP address calculator
 sys-power/nut-monitor 2.8.0: GUI to manage devices connected a NUT server
 www-apps/etesync-dav 0.32.1_p1: A CalDAV and CardDAV adapter for EteSync
 x11-misc/albert 0.22.17 0.23.0 0.24.3 0.25.0 0.26.7: A fast and flexible keyboard launcher
