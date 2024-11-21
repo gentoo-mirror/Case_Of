@@ -4,7 +4,7 @@ dev-libs/cpp-utilities 5.26.1: Common C++ classes and routines such as argument 
 dev-libs/qtforkawesome 0.2.2: Library that bundles ForkAwesome for use within Qt applications
 dev-libs/qtutilities 6.14.3: Common Qt related C++ classes and routines used by my applications such as dialogs, widgets and models
 dev-python/cython 0.29.37.1-r1: A Python to C compiler
-dev-python/etebase-py 0.31.6 0.31.7: Etebase Python library
+dev-python/etebase-py 0.31.6 0.31.7 0.31.8: Etebase Python library
 dev-python/etesync 0.12.1: Python API to interact with an EteSync server
 dev-python/fastapi 0.115.5: High performance, easy to learn, fast to code, ready for production
 dev-python/flask-wtf 1.2.2: Simple integration of Flask and WTForms
