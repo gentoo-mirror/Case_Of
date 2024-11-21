@@ -222,6 +222,7 @@ RDEPEND="
 	dev-python/msgpack[${PYTHON_USEDEP}]
 "
 BDEPEND="
+	dev-lang/rust[rustfmt]
 	dev-python/setuptools-rust[${PYTHON_USEDEP}]
 "
 
