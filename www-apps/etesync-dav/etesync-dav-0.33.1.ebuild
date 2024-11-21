@@ -1,16 +1,16 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{10,11} )
+PYTHON_COMPAT=( python3_{10..12} )
 
 inherit distutils-r1
 
 DESCRIPTION="A CalDAV and CardDAV adapter for EteSync"
 HOMEPAGE="https://www.etesync.com https://github.com/etesync/etesync-dav"
-SRC_URI="https://github.com/etesync/${PN}/archive/v${PV%_*}.tar.gz -> ${P%_*}.tar.gz"
+SRC_URI="https://github.com/etesync/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
@@ -23,16 +23,14 @@ RDEPEND="
 	dev-python/flask[${PYTHON_USEDEP}]
 	dev-python/flask-wtf[${PYTHON_USEDEP}]
 	dev-python/setuptools[${PYTHON_USEDEP}]
-	>=www-apps/radicale-3.0.0[${PYTHON_USEDEP}]
+	>=www-apps/radicale-3.0.3[${PYTHON_USEDEP}]
+	<www-apps/radicale-3.4.0[${PYTHON_USEDEP}]
 "
 BDEPEND="dev-python/wheel[${PYTHON_USEDEP}]"
 
-PATCHES=(
-	"$FILESDIR"/${P%_*}-add-missing-comma-in-setup.py.patch
-	"$FILESDIR"/${P%_*}-radicale-3.2.2.patch
-)
+PATCHES=("$FILESDIR"/${PN}-0.32.1-radicale-3.2.2.patch)
 
-S="${WORKDIR}/${P%_*}"
+S="${WORKDIR}/${P}"
 
 pkg_postinst() {
 	if has_version "=www-apps/radicale-3.2.2"; then
