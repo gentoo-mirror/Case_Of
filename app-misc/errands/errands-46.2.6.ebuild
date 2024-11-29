@@ -17,7 +17,7 @@ RESTRICT="mirror"
 
 RDEPEND="
 	app-crypt/libsecret
-	dev-python/caldav
+	~dev-python/caldav-1.3.9
 	dev-python/icalendar
 	dev-python/pycryptodomex
 	dev-python/pygobject
