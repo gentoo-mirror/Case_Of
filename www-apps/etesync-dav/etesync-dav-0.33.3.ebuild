@@ -24,6 +24,6 @@ RDEPEND="
 	dev-python/flask-wtf[${PYTHON_USEDEP}]
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	>=www-apps/radicale-3.0.3[${PYTHON_USEDEP}]
-	<www-apps/radicale-3.4.0[${PYTHON_USEDEP}]
+	<www-apps/radicale-3.3.0[${PYTHON_USEDEP}]
 "
 BDEPEND="dev-python/wheel[${PYTHON_USEDEP}]"
