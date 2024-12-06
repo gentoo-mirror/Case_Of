@@ -20,15 +20,15 @@ IUSE="qt6 static-libs"
 DEPEND="
 	dev-perl/YAML-LibYAML
 	!qt6? (
-		dev-qt/qtcore:5
-		dev-qt/qtdeclarative:5
-		dev-qt/qtgui:5
+		dev-qt/qtcore:5=
+		dev-qt/qtdeclarative:5=
+		dev-qt/qtgui:5=
 	)
 	qt6? (
-		dev-qt/qtbase:6[gui]
-		dev-qt/qtdeclarative:6
+		dev-qt/qtbase:6=[gui]
+		dev-qt/qtdeclarative:6=
 	)
-	dev-libs/qtutilities[qt6=]
+	dev-libs/qtutilities:=[qt6=]
 "
 RDEPEND="${DEPEND}
 	media-libs/freetype:2[brotli]"
