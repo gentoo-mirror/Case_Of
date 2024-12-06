@@ -20,7 +20,7 @@ net-misc/etebase-server 0.13.1 0.14.2: The Etebase server
 net-misc/subnetcalc 2.4.23 2.5.1 2.6.0: IP address calculator
 sys-power/nut-monitor 2.8.0: GUI to manage devices connected a NUT server
 www-apps/etesync-dav 0.33.4: A CalDAV and CardDAV adapter for EteSync
-x11-misc/albert 0.26.9: A fast and flexible keyboard launcher
+x11-misc/albert 0.26.10: A fast and flexible keyboard launcher
 x11-misc/clipit 1.4.5: Lightweight GTK+ clipboard manager. Fork of Parcellite.
 x11-misc/gcolor2 0.4-r4: A GTK+ color selector
 x11-plugins/syncthingtray 1.6.4: Tray application for Syncthing
