@@ -27,25 +27,25 @@ RDEPEND="
 	dev-libs/qtforkawesome:=[qt6=]
 	dev-libs/qtutilities:=[qt6=]
 	!qt6? (
-		dev-qt/qtconcurrent:5
-		dev-qt/qtcore:5
-		dev-qt/qtnetwork:5
-		dev-qt/qtsvg:5
-		qml? ( dev-qt/qtdeclarative:5 )
-		script? ( dev-qt/qtscript:5 )
-		systemd? ( dev-qt/qtdbus:5 )
-		webengine? ( dev-qt/qtwebengine:5 )
+		dev-qt/qtconcurrent:5=
+		dev-qt/qtcore:5=
+		dev-qt/qtnetwork:5=
+		dev-qt/qtsvg:5=
+		qml? ( dev-qt/qtdeclarative:5= )
+		script? ( dev-qt/qtscript:5= )
+		systemd? ( dev-qt/qtdbus:5= )
+		webengine? ( dev-qt/qtwebengine:5= )
 	)
 	qt6? (
-		dev-qt/qtbase:6[gui,network,widgets]
-		dev-qt/qtsvg:6
+		dev-qt/qtbase:6=[gui,network,widgets]
+		dev-qt/qtsvg:6=
 		kde? (
-			kde-frameworks/kio:6
-			kde-plasma/libplasma:6
+			kde-frameworks/kio:6=
+			kde-plasma/libplasma:6=
 		)
-		qml? ( dev-qt/qtdeclarative:6 )
-		systemd? ( dev-qt/qtbase:6[dbus] )
-		webengine? ( dev-qt/qtwebengine:6 )
+		qml? ( dev-qt/qtdeclarative:6= )
+		systemd? ( dev-qt/qtbase:6=[dbus] )
+		webengine? ( dev-qt/qtwebengine:6= )
 	)
 "
 IDEPEND="
@@ -53,9 +53,9 @@ IDEPEND="
 "
 DEPEND="${RDEPEND}
 	kde? (
-		kde-frameworks/extra-cmake-modules
+		kde-frameworks/extra-cmake-modules:=
 	)
-	qt6? ( dev-qt/qttools:6 )
+	qt6? ( dev-qt/qttools:6= )
 "
 
 RESTRICT="mirror test" #tests want to access network
