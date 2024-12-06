@@ -40,18 +40,18 @@ REQUIRED_USE="
 RESTRICT="mirror bindist"
 
 BDEPEND="
-	dev-qt/qttools:6[linguist]
+	dev-qt/qttools:6=[linguist]
 "
 DEPEND="${RDEPEND}
 	x11-base/xorg-proto"
 RDEPEND="
 	app-arch/libarchive:=
 	dev-libs/libxml2:=
-	dev-qt/qt5compat:6[qml]
-	dev-qt/qtbase:6[concurrent,dbus,gui,network,sql,sqlite,widgets]
-	dev-qt/qtdeclarative:6
-	dev-qt/qtscxml:6[qml]
-	dev-qt/qtsvg:6
+	dev-qt/qt5compat:6=[qml]
+	dev-qt/qtbase:6=[concurrent,dbus,gui,network,sql,sqlite,widgets]
+	dev-qt/qtdeclarative:6=
+	dev-qt/qtscxml:6=[qml]
+	dev-qt/qtsvg:6=
 	sci-libs/libqalculate:=
 	python? (
 		$(python_gen_cond_dep 'dev-python/urllib3[${PYTHON_USEDEP}]')
