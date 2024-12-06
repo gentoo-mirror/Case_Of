@@ -16,25 +16,25 @@ IUSE="qt6 static-libs"
 
 RDEPEND="
 	!qt6? (
-		dev-qt/qtcore:5
-		dev-qt/qtdbus:5
-		dev-qt/qtgui:5
-		dev-qt/qttest:5
-		dev-qt/qtwidgets:5
+		dev-qt/qtcore:5=
+		dev-qt/qtdbus:5=
+		dev-qt/qtgui:5=
+		dev-qt/qttest:5=
+		dev-qt/qtwidgets:5=
 	)
 	qt6? (
-		dev-qt/qtbase:6[dbus,gui,widgets]
+		dev-qt/qtbase:6=[dbus,gui,widgets]
 	)
 	dev-libs/cpp-utilities
 	x11-libs/libX11
 "
 DEPEND="${RDEPEND}
 	!qt6? (
-		dev-qt/linguist-tools:5
+		dev-qt/linguist-tools:5=
 	)
 	qt6? (
-		dev-qt/qttools:6[linguist]
-		dev-qt/qtdeclarative:6
+		dev-qt/qttools:6=[linguist]
+		dev-qt/qtdeclarative:6=
 	)
 "
 
