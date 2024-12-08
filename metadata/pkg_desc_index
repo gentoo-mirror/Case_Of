@@ -1,4 +1,4 @@
-app-misc/errands 46.2.6: Todo application for those who prefer simplicity
+app-misc/errands 46.2.7: Todo application for those who prefer simplicity
 app-office/grammalecte 2.1.2: French grammar checker extension for LibreOffice.
 dev-libs/cpp-utilities 5.27.0: Common C++ classes and routines such as argument parser, IO and conversion utilities
 dev-libs/qtforkawesome 0.2.3: Library that bundles ForkAwesome for use within Qt applications
