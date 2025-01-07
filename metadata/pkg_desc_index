@@ -1,8 +1,8 @@
 app-misc/errands 46.2.7: Todo application for those who prefer simplicity
 app-office/grammalecte 2.1.2: French grammar checker extension for LibreOffice.
-dev-libs/cpp-utilities 5.27.0: Common C++ classes and routines such as argument parser, IO and conversion utilities
+dev-libs/cpp-utilities 5.27.1: Common C++ classes and routines such as argument parser, IO and conversion utilities
 dev-libs/qtforkawesome 0.2.3: Library that bundles ForkAwesome for use within Qt applications
-dev-libs/qtutilities 6.14.4: Common Qt related C++ classes and routines used by my applications such as dialogs, widgets and models
+dev-libs/qtutilities 6.14.5: Common Qt related C++ classes and routines used by my applications such as dialogs, widgets and models
 dev-python/cython 0.29.37.1-r1: A Python to C compiler
 dev-python/etebase-py 0.31.8: Etebase Python library
 dev-python/etesync 0.12.1: Python API to interact with an EteSync server
@@ -17,11 +17,11 @@ gnome-extra/evolution-etesync 1.0.0 1.1.0 1.1.1: EteSync plugin for Evolution
 gui-apps/gcolor3 2.4.0: A simple color chooser written in GTK3
 net-libs/libetebase 0.5.2 0.5.3 0.5.4 0.5.5 0.5.6: C library for etebase
 net-misc/etebase-server 0.13.1 0.14.2: The Etebase server
-net-misc/subnetcalc 2.4.23 2.5.1 2.6.0 2.6.1: IP address calculator
+net-misc/subnetcalc 2.4.23 2.5.1 2.6.0 2.6.1 2.6.2: IP address calculator
 sys-power/nut-monitor 2.8.0: GUI to manage devices connected a NUT server
 www-apps/etesync-dav 0.33.4: A CalDAV and CardDAV adapter for EteSync
 x11-misc/albert 0.26.11: A fast and flexible keyboard launcher
 x11-misc/clipit 1.4.5: Lightweight GTK+ clipboard manager. Fork of Parcellite.
 x11-misc/gcolor2 0.4-r4: A GTK+ color selector
-x11-plugins/syncthingtray 1.6.4: Tray application for Syncthing
+x11-plugins/syncthingtray 1.7.0: Tray application for Syncthing
 x11-themes/qt6gtk2 0.3: GTK+2.0 integration plugins for Qt6
