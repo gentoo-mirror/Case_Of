@@ -12,7 +12,7 @@ SRC_URI="https://github.com/Martchus/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 LICENSE="GPL-2+"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="qt6 static-libs"
+IUSE="+qt6 static-libs"
 
 RDEPEND="
 	!qt6? (

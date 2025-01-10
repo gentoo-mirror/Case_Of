@@ -15,7 +15,7 @@ SRC_URI="https://github.com/Martchus/qtforkawesome/archive/v${PV}.tar.gz -> ${P}
 LICENSE="GPL-2+"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="qt6 static-libs"
+IUSE="+qt6 static-libs"
 
 DEPEND="
 	dev-perl/YAML-LibYAML

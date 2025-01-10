@@ -12,7 +12,7 @@ SRC_URI="https://github.com/Martchus/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 LICENSE="GPL-2+"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="kde qml qt6 script static-libs systemd webengine"
+IUSE="kde qml +qt6 script static-libs systemd webengine"
 
 REQUIRED_USE="
 	kde? ( qt6 )
