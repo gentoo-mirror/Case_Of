@@ -19,6 +19,8 @@ REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 S="${WORKDIR}/server-${PV}"
 
 RDEPEND="
+	acct-group/etebase
+	acct-user/etebase
 	${PYTHON_DEPS}
 	$(python_gen_cond_dep '
 		>=dev-python/aiofiles-23.2.1[${PYTHON_USEDEP}]
@@ -55,10 +57,12 @@ src_install() {
 	doins -r .
 	fperms 755 /usr/$(get_libdir)/${PN}/manage.py
 	make_wrapper "${PN}" "./manage.py" "${EPREFIX}/usr/$(get_libdir)/${PN}"
-	sed "s/@LIBDIR@/$(get_libdir)/" "${FILESDIR}/etebase.initd" > etebase.initd || die
+	sed "s/@LIBDIR@/$(get_libdir)/" "${FILESDIR}/etebase.initd-r1" > etebase.initd-r1 || die
 	sed "s/@LIBDIR@/$(get_libdir)/" "${FILESDIR}/etebase.service" > etebase.service || die
-	newinitd etebase.initd etebase
+	newinitd etebase.initd-r1 etebase
 	newconfd "${FILESDIR}/etebase.confd" etebase
+	insinto /etc/logrotate.d
+	newins "${FILESDIR}"/etebase.logrotate etebase
 	systemd_dounit etebase.service
 	keepdir /var/lib/${PN}
 }

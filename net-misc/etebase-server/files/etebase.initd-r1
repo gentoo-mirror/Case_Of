@@ -8,3 +8,12 @@ command_args+=" --port ${ETEBASE_PORT:-8000} --host ${ETEBASE_HOST:-127.0.0.1}"
 pidfile="/run/etebase-server.pid"
 command_background=true
 command_user="etebase:etebase"
+output_log="/var/log/etebase.log"
+error_log="/var/log/etebase_err.log"
+
+start_pre()
+{
+	checkpath -d -m 0755 -o etebase:etebase /var/lib/etebase-server
+	checkpath -f -m 0644 -o etebase:etebase /var/log/etebase.log
+	checkpath -f -m 0644 -o etebase:etebase /var/log/etebase_err.log
+}
