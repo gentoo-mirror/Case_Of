@@ -57,7 +57,7 @@ src_install() {
 	doins -r .
 	fperms 755 /usr/$(get_libdir)/${PN}/manage.py
 	make_wrapper "${PN}" "./manage.py" "${EPREFIX}/usr/$(get_libdir)/${PN}"
-	sed "s/@LIBDIR@/$(get_libdir)/" "${FILESDIR}/etebase.initd" > etebase.initd || die
+	sed "s/@LIBDIR@/$(get_libdir)/" "${FILESDIR}/etebase.initd-r1" > etebase.initd-r1 || die
 	sed "s/@LIBDIR@/$(get_libdir)/" "${FILESDIR}/etebase.service" > etebase.service || die
 	newinitd etebase.initd-r1 etebase
 	newconfd "${FILESDIR}/etebase.confd" etebase
