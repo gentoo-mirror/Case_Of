@@ -1,0 +1,8 @@
+/var/log/etebase.log /var/log/etebase_err.log {
+	rotate 4
+	compress
+	copytruncate
+	size 200k
+	noolddir
+	missingok
+}
