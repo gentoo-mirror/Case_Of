@@ -1,6 +1,6 @@
 acct-group/etebase 0: A group for net-misc/etebase-server
 acct-user/etebase 0: A user for net-misc/etebase-server
-app-misc/errands 46.2.7: Todo application for those who prefer simplicity
+app-misc/errands 46.2.7 46.2.8: Todo application for those who prefer simplicity
 app-office/grammalecte 2.1.2: French grammar checker extension for LibreOffice.
 dev-libs/cpp-utilities 5.27.3: Common C++ classes and routines such as argument parser, IO and conversion utilities
 dev-libs/qtforkawesome 0.3.1: Library that bundles ForkAwesome for use within Qt applications
