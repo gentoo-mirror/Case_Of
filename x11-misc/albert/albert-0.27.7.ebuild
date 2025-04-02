@@ -41,6 +41,8 @@ RDEPEND="
 	${PYTHON_DEPS}
 "
 
+S="${WORKDIR}-${PN}"
+
 src_configure() {
 	local mycmakeargs=(
 		-DBUILD_DEBUG=$(usex debug)
