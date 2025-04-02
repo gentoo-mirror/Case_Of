@@ -41,7 +41,7 @@ RDEPEND="
 	${PYTHON_DEPS}
 "
 
-S="${WORKDIR}-${PN}"
+S="${WORKDIR}/${PN}"
 
 src_configure() {
 	local mycmakeargs=(
