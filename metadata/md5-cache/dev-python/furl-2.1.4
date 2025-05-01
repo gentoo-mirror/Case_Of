@@ -1,17 +1,17 @@
-BDEPEND=test? ( test? ( dev-python/flake8[python_targets_python3_11(-)?,python_targets_python3_12(-)?] ) dev-python/six[python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/orderedmultidict[python_targets_python3_11(-)?,python_targets_python3_12(-)?] >=dev-python/pytest-7.4.4[python_targets_python3_11(-)?,python_targets_python3_12(-)?] ) python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 ) >=dev-python/gpep517-16[python_targets_python3_11(-)?,python_targets_python3_12(-)?] >=dev-python/setuptools-78.1.0[python_targets_python3_11(-)?,python_targets_python3_12(-)?]
+BDEPEND=test? ( test? ( dev-python/flake8[python_targets_python3_11(-)?,python_targets_python3_12(-)?,python_targets_python3_13(-)?] ) dev-python/six[python_targets_python3_11(-)?,python_targets_python3_12(-)?,python_targets_python3_13(-)?] dev-python/orderedmultidict[python_targets_python3_11(-)?,python_targets_python3_12(-)?,python_targets_python3_13(-)?] >=dev-python/pytest-7.4.4[python_targets_python3_11(-)?,python_targets_python3_12(-)?,python_targets_python3_13(-)?] ) python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 ) python_targets_python3_13? ( dev-lang/python:3.13 ) >=dev-python/gpep517-16[python_targets_python3_11(-)?,python_targets_python3_12(-)?,python_targets_python3_13(-)?] >=dev-python/setuptools-78.1.0[python_targets_python3_11(-)?,python_targets_python3_12(-)?,python_targets_python3_13(-)?]
 DEFINED_PHASES=compile configure install prepare test
-DEPEND=test? ( dev-python/flake8[python_targets_python3_11(-)?,python_targets_python3_12(-)?] ) dev-python/six[python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/orderedmultidict[python_targets_python3_11(-)?,python_targets_python3_12(-)?]
+DEPEND=test? ( dev-python/flake8[python_targets_python3_11(-)?,python_targets_python3_12(-)?,python_targets_python3_13(-)?] ) dev-python/six[python_targets_python3_11(-)?,python_targets_python3_12(-)?,python_targets_python3_13(-)?] dev-python/orderedmultidict[python_targets_python3_11(-)?,python_targets_python3_12(-)?,python_targets_python3_13(-)?]
 DESCRIPTION=URL parsing and manipulation made easy.
 EAPI=8
 HOMEPAGE=https://github.com/gruns/furl
 INHERIT=distutils-r1 pypi
-IUSE=test test python_targets_python3_11 python_targets_python3_12
+IUSE=test test python_targets_python3_11 python_targets_python3_12 python_targets_python3_13
 KEYWORDS=~amd64
 LICENSE=Unlicense
-RDEPEND=test? ( dev-python/flake8[python_targets_python3_11(-)?,python_targets_python3_12(-)?] ) dev-python/six[python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/orderedmultidict[python_targets_python3_11(-)?,python_targets_python3_12(-)?] python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 )
-REQUIRED_USE=|| ( python_targets_python3_11 python_targets_python3_12 )
+RDEPEND=test? ( dev-python/flake8[python_targets_python3_11(-)?,python_targets_python3_12(-)?,python_targets_python3_13(-)?] ) dev-python/six[python_targets_python3_11(-)?,python_targets_python3_12(-)?,python_targets_python3_13(-)?] dev-python/orderedmultidict[python_targets_python3_11(-)?,python_targets_python3_12(-)?,python_targets_python3_13(-)?] python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 ) python_targets_python3_13? ( dev-lang/python:3.13 )
+REQUIRED_USE=|| ( python_targets_python3_11 python_targets_python3_12 python_targets_python3_13 )
 RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://files.pythonhosted.org/packages/source/f/furl/furl-2.1.4.tar.gz
 _eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	e8de74bac929ba17427e740e95707d00	out-of-source-utils	dbf9e34ee8964084651e25907fa8f52c	multibuild	4650a65187015567b4e041bb9bfdb364	multilib	b2a329026f2e404e9e371097dda47f96	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	b6ad054ea5bb201ed2fec9cac7a8d12b	python-r1	0e15b2ab9cfc87d7474678201d6bca38	distutils-r1	2a874f6b13be509cff13de8e37085386	pypi	ad1b21f87d117ae9bb089bdb65b8f013
-_md5_=e19f5594bf581d22400368241b550dbd
+_md5_=8a6ab42a98e50403dd3e9e95f2d6fb9c
