@@ -8,5 +8,4 @@ x11-misc/albert:python-extensions - Install default python extensions system-wid
 x11-misc/clipit:appindicator - Enable support for appindicator
 x11-misc/clipit:gtk3 - Enable GTK+ 3 support
 x11-plugins/syncthingtray:qml - Use QML as Javascript provider
-x11-plugins/syncthingtray:script - Use dev-qt/qtscript as Javascript provider
 x11-plugins/syncthingtray:webengine - Use dev-qt/qtwebengine as HTML rendering engine
