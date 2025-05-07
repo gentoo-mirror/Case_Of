@@ -17,8 +17,8 @@ IUSE="kde qml static-libs systemd webengine"
 RDEPEND="
 	dev-libs/openssl:=
 	dev-libs/boost:=
-	dev-libs/qtforkawesome:=[qt6=]
-	dev-libs/qtutilities:=[qt6=]
+	dev-libs/qtforkawesome:=
+	dev-libs/qtutilities:=
 	dev-qt/qtbase:6=[gui,network,widgets]
 	dev-qt/qtsvg:6=
 	kde? (
