@@ -1,16 +1,16 @@
 BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.20.5
 DEFINED_PHASES=compile configure install prepare test
-DEPEND=dev-perl/YAML-LibYAML !qt6? ( dev-qt/qtcore:5= dev-qt/qtdeclarative:5= dev-qt/qtgui:5= ) qt6? ( dev-qt/qtbase:6=[gui] dev-qt/qtdeclarative:6= ) dev-libs/qtutilities:=[qt6=]
+DEPEND=dev-libs/qtutilities:= dev-perl/YAML-LibYAML dev-qt/qtbase:6=[gui] dev-qt/qtdeclarative:6=
 DESCRIPTION=Library that bundles ForkAwesome for use within Qt applications
 EAPI=8
 HOMEPAGE=https://github.com/Martchus/qtforkawesome
 INHERIT=cmake
-IUSE=+qt6 static-libs
+IUSE=static-libs
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2+
-RDEPEND=dev-perl/YAML-LibYAML !qt6? ( dev-qt/qtcore:5= dev-qt/qtdeclarative:5= dev-qt/qtgui:5= ) qt6? ( dev-qt/qtbase:6=[gui] dev-qt/qtdeclarative:6= ) dev-libs/qtutilities:=[qt6=] media-libs/freetype:2[brotli]
+RDEPEND=dev-libs/qtutilities:= dev-perl/YAML-LibYAML dev-qt/qtbase:6=[gui] dev-qt/qtdeclarative:6= media-libs/freetype:2[brotli]
 RESTRICT=mirror test
 SLOT=0
 SRC_URI=https://github.com/Martchus/qtforkawesome/archive/v0.3.1.tar.gz -> qtforkawesome-0.3.1.tar.gz https://github.com/ForkAwesome/Fork-Awesome/archive/refs/tags/1.2.0.tar.gz -> Fork-Awesome-1.2.0.tar.gz
 _eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	b892042b2667b8ac69ec8a2571dc290a	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	b05c1b7b3c9213c155f128f4eadaa49f
-_md5_=602fa42da3ffd7de872801a81b88187a
+_md5_=2b0bfeacdea46b4a103f21b8bc611720
