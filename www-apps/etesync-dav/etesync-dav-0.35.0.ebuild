@@ -4,7 +4,7 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{10..12} )
+PYTHON_COMPAT=( python3_{10..13} )
 
 inherit distutils-r1
 
@@ -24,6 +24,6 @@ RDEPEND="
 	dev-python/flask-wtf[${PYTHON_USEDEP}]
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	>=www-apps/radicale-3.0.3[${PYTHON_USEDEP}]
-	<www-apps/radicale-3.3.0[${PYTHON_USEDEP}]
+	<www-apps/radicale-3.5[${PYTHON_USEDEP}]
 "
 BDEPEND="dev-python/wheel[${PYTHON_USEDEP}]"
