@@ -27,4 +27,4 @@ x11-misc/albert 0.26.13 0.27.8 0.28.2 0.29.4: A fast and flexible keyboard launc
 x11-misc/clipit 1.4.5: Lightweight GTK+ clipboard manager. Fork of Parcellite.
 x11-misc/gcolor2 0.4-r4: A GTK+ color selector
 x11-plugins/syncthingtray 1.7.8: Tray application for Syncthing
-x11-themes/qt6gtk2 0.3: GTK+2.0 integration plugins for Qt6
+x11-themes/qt6gtk2 0.3 0.5: GTK+2.0 integration plugins for Qt6
