@@ -2,9 +2,9 @@ acct-group/etebase 0: A group for net-misc/etebase-server
 acct-user/etebase 0: A user for net-misc/etebase-server
 app-misc/errands 46.2.7 46.2.8: Todo application for those who prefer simplicity
 app-office/grammalecte 2.1.2: French grammar checker extension for LibreOffice.
-dev-libs/cpp-utilities 5.29.0: Common C++ classes and routines such as argument parser, IO and conversion utilities
+dev-libs/cpp-utilities 5.30.0: Common C++ classes and routines such as argument parser, IO and conversion utilities
 dev-libs/qtforkawesome 0.3.1: Library that bundles ForkAwesome for use within Qt applications
-dev-libs/qtutilities 6.17.0: Common Qt related C++ classes and routines used by my applications such as dialogs, widgets and models
+dev-libs/qtutilities 6.18.0: Common Qt related C++ classes and routines used by my applications such as dialogs, widgets and models
 dev-python/cython 0.29.37.1-r1: A Python to C compiler
 dev-python/etebase-py 0.31.8: Etebase Python library
 dev-python/etesync 0.12.1: Python API to interact with an EteSync server
@@ -26,5 +26,5 @@ www-apps/radicale 3.4.1: A simple CalDAV calendar server
 x11-misc/albert 0.26.13 0.27.8 0.28.2 0.29.4 0.30.1 0.31.1: A fast and flexible keyboard launcher
 x11-misc/clipit 1.4.5: Lightweight GTK+ clipboard manager. Fork of Parcellite.
 x11-misc/gcolor2 0.4-r4: A GTK+ color selector
-x11-plugins/syncthingtray 1.7.10: Tray application for Syncthing
+x11-plugins/syncthingtray 2.0.0: Tray application for Syncthing
 x11-themes/qt6gtk2 0.3 0.5: GTK+2.0 integration plugins for Qt6
