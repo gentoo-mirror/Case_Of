@@ -14,6 +14,5 @@
 	</upstream>
 	<use>
 		<flag name="debug">Enable debugging informations</flag>
-		<flag name="python-extensions">Install default python extensions system-wide</flag>
 	</use>
 </pkgmetadata>
