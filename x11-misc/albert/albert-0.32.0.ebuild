@@ -31,6 +31,7 @@ DEPEND="${RDEPEND}
 RDEPEND="
 	app-arch/libarchive:=
 	dev-libs/libxml2:=
+	dev-libs/qtkeychain:=
 	dev-qt/qt5compat:6=[qml]
 	dev-qt/qtbase:6=[concurrent,dbus,gui,network,sql,sqlite,widgets]
 	dev-qt/qtdeclarative:6=
