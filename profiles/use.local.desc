@@ -4,7 +4,6 @@
 
 dev-python/pydantic:native-extensions - Compiles native "C" extensions.
 x11-misc/albert:debug - Enable debugging informations
-x11-misc/albert:python-extensions - Install default python extensions system-wide
 x11-misc/clipit:appindicator - Enable support for appindicator
 x11-misc/clipit:gtk3 - Enable GTK+ 3 support
 x11-plugins/syncthingtray:qml - Use QML as Javascript provider

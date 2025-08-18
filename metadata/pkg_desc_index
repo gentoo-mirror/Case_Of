@@ -23,7 +23,7 @@ net-misc/subnetcalc 2.6.0 2.6.1 2.6.2 2.6.3 2.6.4: IP address calculator
 sys-power/nut-monitor 2.8.0: GUI to manage devices connected a NUT server
 www-apps/etesync-dav 0.35.1: A CalDAV and CardDAV adapter for EteSync
 www-apps/radicale 3.4.1: A simple CalDAV calendar server
-x11-misc/albert 0.26.13 0.27.8 0.28.2 0.29.4 0.30.1 0.31.1: A fast and flexible keyboard launcher
+x11-misc/albert 0.31.1 0.32.0: A fast and flexible keyboard launcher
 x11-misc/clipit 1.4.5: Lightweight GTK+ clipboard manager. Fork of Parcellite.
 x11-misc/gcolor2 0.4-r4: A GTK+ color selector
 x11-plugins/syncthingtray 2.0.0: Tray application for Syncthing
